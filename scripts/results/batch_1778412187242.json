@@ -1,0 +1,521 @@
+[
+  {
+    "transcript": "Ma reggel egy érdekes eset került a rendelőmbe, egy 3 éves tacskó, Max. Az állat gazdája először azt mondta, hogy a kutya a jobb első lábát fájlalja, de aztán kiderült, hogy valójában a bal hátsó lábával van probléma. Már majdnem küldtem volna röntgenre, amikor rájöttem, hogy inkább ultrahangra lenne szükség. Megkértem a gazdát, hogy figyeljen a kutya diétájára, de lehet, hogy inkább a sebészi beavatkozást fontolgatnám. Azt hiszem, szükség lehet egy műtétre, de talán mégse, talán csak pihenés kellene. Végül is, írjunk fel egy doboz fájdalomcsillapítót, de várjunk csak, kettő legyen az a doboz, biztos, ami biztos.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "7",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "2",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "7",
+          "evidence": "inkább ultrahangra lenne szükség",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "2",
+          "evidence": "írjunk fel egy doboz fájdalomcsillapítót, de várjunk csak, kettő legyen az a doboz",
+          "confidence": 0.95
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jött egy páciens, egy 5 éves perzsa macska, Luna. A gazdája elmondta, hogy a cica nem eszik és levert. Először azt javasoltam, hogy nézzük meg a vérképét, de azt hiszem, elég lesz a has ultrahang is. De nem, talán jobb lenne mégis a teljes vérvizsgálat. A tulajdonos kérdezte, hogy szükséges-e speciális diéta, mondtam hogy valószínűleg nem, de talán mégis. Inkább írok neki egy doboz vitamin-kiegészítőt. Várjunk, mégsem, talán a táplálékkiegészítőkkel kezdjünk.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "7",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "Először azt javasoltam, hogy nézzük meg a vérképét.",
+          "confidence": 0.9
+        },
+        {
+          "field": "kepalkoto_keres",
+          "value": "7",
+          "evidence": "de azt hiszem, elég lesz a has ultrahang is.",
+          "confidence": 0.8
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Inkább írok neki egy doboz vitamin-kiegészítőt.",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "József, 35 éves férfi, aki azzal jött be, hogy erős fejfájást tapasztal. Először gondoltam egy sima fejfájás csillapítót írni, de aztán rájöttem, hogy talán csináljunk egy CT vizsgálatot. De nem, végül csak vérnyomásmérést csináltunk, mert talán az a baj, hogy magas a vérnyomása, de ki tudja, lehet, hogy a stressz okozza. Ajánlottam neki, hogy próbáljon pihenni többet, lehet, hogy nem is kell táppénzre mennie, de talán mégis jobb lenne, ha igen.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Fejfájás",
+          "evidence": "József, 35 éves férfi, aki azzal jött be, hogy erős fejfájást tapasztal.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Vérnyomásmérés",
+          "quantity_me": 1,
+          "evidence": "végül csak vérnyomásmérést csináltunk, mert talán az a baj, hogy magas a vérnyomása",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "talán csináljunk egy CT vizsgálatot",
+          "confidence": 0.6
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 8 éves labrador, Buddy van itt előttem, aki állandóan vakarózik. Először azt hittem, hogy bolha probléma, de a vizsgálat közben kiderült, hogy valószínűleg pollenallergia. Eredetileg sima bolhairtóval indítottam volna a kezelést, de aztán mégis allergia tesztet végeztünk. Javasoltam diétát és egy antihisztamin kúrát, de talán mégsem, lehet, hogy először próbáljuk ki a zsírsav kiegészítőket. Egy doboz diétás tápot is felírhatnánk neki, de várjunk csak, inkább mégse.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Pollenallergia",
+          "evidence": "A vizsgálat közben kiderült, hogy valószínűleg pollenallergia.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Allergia teszt",
+          "quantity_me": 1,
+          "evidence": "Allergia tesztet végeztünk.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "0",
+          "evidence": "Javasoltam diétát és egy antihisztamin kúrát, de talán mégsem.",
+          "confidence": 0.6
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Nagyon érdekes eset, egy 28 éves nő, Szilvia, aki gyakori szédülést tapasztal. Beszélgetés közben említette, hogy állandó fáradtság gyötri. Először azt gondoltam, hogy csináljunk egy vas szint vizsgálatot, de aztán mégis inkább a pajzsmirigy hormon szintjét kérdeztem ki. De lehet, hogy a kettőt együtt kéne nézni. Azt javasoltam, hogy pihenjen többet, talán járjon el jógára, de lehet, hogy orvosi táppénz kellene, hogy kipihenje magát. Ajánlottam neki, hogy talán próbálja meg a vitaminokat is.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "1",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Gyakori szédülés",
+          "evidence": "Szilvia gyakori szédülést tapasztal.",
+          "confidence": 0.8
+        },
+        {
+          "bno10": null,
+          "text_label": "Állandó fáradtság",
+          "evidence": "Állandó fáradtság gyötri.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Pajzsmirigy hormon szint vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Pajzsmirigy hormon szintjét kérdeztem ki.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "Csináljunk egy vas szint vizsgálatot.",
+          "confidence": 0.9
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "1",
+          "evidence": "Lehet, hogy orvosi táppénz kellene.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 10 éves szibériai husky, Neptun, aki légzési nehézségekre panaszkodik. Először úgy tűnt, talán valamilyen légúti fertőzés áll a háttérben, és már írtam volna fel antibiotikumot, de rájöttem, hogy lehet, hogy csak a hideg időjárás zavarja. Talán egy légzésvizsgálat lenne a legjobb, de lehet, hogy nem, talán a röntgen a tuti tipp. Végül is, írtam neki egy doboz, nem kettő, hörgőtágító gyógyszert.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Légzési nehézség",
+          "evidence": "Neptun légzési nehézségekre panaszkodik.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Röntgen",
+          "quantity_me": 1,
+          "evidence": "Talán a röntgen a tuti tipp.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Írtam neki egy doboz hörgőtágító gyógyszert.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Boglárka, egy 42 éves nő panaszkodott arról, hogy mindig fázik. Először azt hittem, hogy csak alacsony a vérnyomása, de aztán rájöttem, hogy pajzsmirigy alulműködés is lehet. Már majdnem küldtem volna hormonvizsgálatra, de talán elég egy egyszerű vérkép is. Azt javasoltam, hogy próbáljon meg többet mozogni, de talán nem ártana, ha egy dietetikus is látja. Írtam neki egy táplálékkiegészítőt, de aztán visszavontam, mondtam, hogy inkább ne vegyen feleslegesen.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "E03.9",
+          "text_label": "Pajzsmirigy alulműködés",
+          "evidence": "pajzsmirigy alulműködés is lehet",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "de talán elég egy egyszerű vérkép is",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 7 éves vizsla, Bella, akinek az ízületei fájnak. Először ízületi gyulladásra gondoltam, de aztán kiderült, hogy lehet, hogy csak túlerőltette a lábait. Már éppen rendeltem volna fizioterápiát, de aztán mégis inkább pihentetést javasoltam. Lehet, hogy egy kis diéta is jót tenne neki, talán inkább a glükozamin kiegészítőt próbálnám meg, de nem, mégis csak vizsgáljuk meg jobban először.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "ízületi fájdalom",
+          "evidence": "Egy 7 éves vizsla, Bella, akinek az ízületei fájnak.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Sándor, 50 éves férfi, panaszkodik mellkasi fájdalmakról. Először szívproblémát gyanítottam, de a vizsgálat során kiderült, hogy lehet csak gyomorégés. Már majdnem ekg-t rendeltem el, de lehet, hogy elég lesz egy savlekötőt kipróbálnia először. Azt mondtam, hogy kímélje a gyomrát, de lehet mégis érdemes lenne a kardiológushoz mennie. Talán írjunk egy doboz gyomorsavra való gyógyszert, de várjunk, ne, inkább forduljon szakemberhez.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "1",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Mellkasi fájdalom, valószínű gyomorégés",
+          "evidence": "Panaszkodik mellkasi fájdalmakról, lehet csak gyomorégés.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "tovabbkuldes",
+          "value": "1",
+          "evidence": "érdemes lenne a kardiológushoz mennie",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 2 éves perzsa macska, Cirmi, akinek folyamatosan könnyezik a szeme. Először csak irritációra gyanakodtam, de akkor felmerült az allergia lehetősége is. Már majdnem írtam volna fel szemcseppet, de aztán inkább próbáljuk ki az allergia tesztet, talán az a legjobb. A gazdának javasoltam, hogy tisztítsa gyakrabban a macska szemét, de lehet, hogy mégsem ez a megoldás. Talán inkább diétát kéne változtatni. Azt hiszem, egy dobozt kapjunk még az antihisztamin szemcseppből.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Allergia gyanú",
+          "evidence": "Folyamatosan könnyezik a szeme, allergia lehetősége felmerült.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Allergia teszt",
+          "quantity_me": 1,
+          "evidence": "Próbáljuk ki az allergia tesztet, talán az a legjobb.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Egy dobozt kapjunk még az antihisztamin szemcseppből.",
+          "confidence": 0.85
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  }
+]

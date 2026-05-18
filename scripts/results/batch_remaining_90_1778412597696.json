@@ -1,0 +1,4559 @@
+[
+  {
+    "transcript": "Jó napot kívánok, itt Dr. Pepszi Béla. Szóval, ma fogadjuk Pisti bácsi kutyáját, ami egy 12 éves golden retriever. Hát őőő, úgy néz ki, hogy enyhén sánta a jobb hátsó lábára. Esetleg... gondoltam, hogy talán egy CT-t kéne csinálnunk... de várjunk csak, igazából egy egyszerű röntgen talán elég is lesz. Mégiscsak, valószínűleg csak egy kis gyulladás. Adjunk neki... várjunk, mennyit is szoktam adni? Talán napi egy tabletta ibuprofén elég lesz... vagy mégis csak kettő? Nem, inkább maradjon az egynél. Aztán... ja, bocsánat, elfelejtettem mondani, hogy lehet, hogy el kellene küldeni ortopédiára... bár talán nem szükséges. Pisti bácsi kérdezte, hogy lehet-e táppénzre venni a kutyát, de mondtam neki, hogy ilyen nem lehetséges. Reméljük gyorsan javul és a következő kontrollon már jobb lesz a helyzet.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "...igazából egy egyszerű röntgen talán elég is lesz...",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "...Talán napi egy tabletta ibuprofén elég lesz...",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, dr. Pepszi Béla vagyok, ma találkozunk Kovács Pálné macskájával, egy 5 éves perzsa cicával. Most, hát, kicsit zavaros a helyzet, mert nem is tudom, hogy a hasmenése mióta tart pontosan. Azt mondta az asszony, hogy hetek óta? Vagy csak pár napja? Azt hiszem, talán csak néhány napja. Mindenesetre, kezdjük probiotikumokkal, mondjuk egy hétig kapja őket. De mégis, ha nem javul, talán érdemes lenne elküldeni egy vérvizsgálatra... vagy inkább ultrahangra? Nem, nem, vérvizsgálat lesz az. És ha valóban elhúzódik, gondolkodjunk máson, mint... szteroidok? De talán nem is kéne. Reméljük az étrendváltoztatás segít, adjunk neki összesen két... nem, három-négy konzervet speciális diétás tápból a jövő héten. Aztán meglátjuk, hogy alakul.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Hasmenés",
+          "evidence": "A macska hasmenése mióta tart pontosan.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Vérvizsgálat",
+          "quantity_me": 1,
+          "evidence": "Érdemes lenne elküldeni egy vérvizsgálatra.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "Érdemes lenne elküldeni egy vérvizsgálatra.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Dr. Pepszi Béla vagyok, ma itt ül velem Szabó Géza, aki a térdfájdalma miatt keresett fel minket. Először is, azt gondoltam, hogy kéne egy MRI... de nem, inkább csak egy sima röntgen elég. Jó, ez így elvileg rendben is lenne. De hát, Géza, maga mondta, hogy a fájdalom néha egészen elviselhetetlen, úgyhogy talán mégis csak kéne az az MRI. Közben felírok neki gyulladáscsökkentőt, mondjuk diklofenákot, napi kétszer, nem, egyszer. Inkább egyszer. Vagy ne is vegyen be semmit, csak ha nagyon fáj? Hát, nem tudom, de inkább maradjunk a napi egyszeri adagolásnál. Ja, és talán próbáljon meg egy kis fizioterápiát. Vagy mégse, inkább ne. Vagy igen. Jaj, nem is tudom, Géza, beszéljen a gyógytornászokkal először.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "2",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Térdfájdalom",
+          "evidence": "Szabó Géza térdfájdalma miatt keresett fel minket.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Röntgen vizsgálat",
+          "quantity_me": 1,
+          "evidence": "inkább csak egy sima röntgen elég",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "inkább csak egy sima röntgen elég",
+          "confidence": 0.9
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "2",
+          "evidence": "talán mégis csak kéne az az MRI",
+          "confidence": 0.7
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "felírok neki gyulladáscsökkentőt, mondjuk diklofenákot, napi egyszer",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, itt Pepszi Béla, ezúttal Klári néni papagájával találkozzunk, egy kicsit különleges eset. Mióta is? Talán három hónapja? Vagy még több? Mindenesetre régóta köhög szegény madárka. Lehet, hogy már tüdőgyulladása van, bár nem vagyok benne biztos. Azt hiszem antibiotikummal kéne próbálkozni. Mondjuk enrofloxacint adunk neki, bár lehet, hogy a doxyciklin jobb lenne. Nem is tudom, talán a kollégát kéne megkérdeznem, de kezdjük csak az enrofloxacinnal. Klári néni említette, hogy a madara már nem énekel úgy, mint régen, lehet valamiféle idegi alapú probléma is. Reméljük javul és nem szükségesek a további vizsgálatok.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Tüdőgyulladás gyanúja",
+          "evidence": "Lehet, hogy már tüdőgyulladása van, bár nem vagyok benne biztos.",
+          "confidence": 0.6
+        },
+        {
+          "bno10": null,
+          "text_label": "Idegi alapú probléma gyanúja",
+          "evidence": "Lehet valamiféle idegi alapú probléma is.",
+          "confidence": 0.5
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Azt hiszem antibiotikummal kéne próbálkozni.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlet, dr. Pepszi Béla vagyok, ma egy másik érdekes eset: Tóth János hörcsöge, ami régóta vakarózik. Azt gondoltam először, hogy talán bolha vagy valami parazita. No várjunk, nem, mégis inkább allergia, hiszen a szőrén nem látok semmiféle elváltozást. Lehet, hogy a széna allergiás reakciót okoz. Talán lecseréljük a szénát másfélére. Bár lehet, hogy ez éppen csak ront a helyzeten, nem tudom. Mindenesetre megkóstálhatjuk a hipoallergén tápokat is. Ha nem javul, elküldöm bőrgyógyászhoz. Illetve, próbáljunk meg sima szénabenzalkóniumot használni, bár nem vagyok benne biztos, hogy az segít. Nézzük meg, hogyan alakul a következő héten.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Allergia gyanúja hörcsögnél",
+          "evidence": "A hörcsög vakarózik, allergiás reakció gyanúja.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, dr. Pepszi Béla vagyok, ma Kiss Lajos érkezett hozzánk az influenzaszerű tüneteivel, ami már egy ideje kitart. Elsőre azt mondtam neki, hogy biztosan csak egy sima megfázás, de nem, mégis inkább lehet valamilyen komolyabb fertőzés. Adjunk neki antivirális gyógyszert, talán oszeltamivirt, vagy ne is, inkább maradjunk a paracetamolnál, az mindig bevált. Vagy nem, talán próbáljuk meg a homeopátiát... jaj, nem, hülyeség, inkább a paracetamol marad. Táppénzre ugyan nem tudom engedni, kérdezze meg a háziorvosát. És talán próbáljon meg sok pihenést és folyadékot bevinni. A következő héten jöjjön vissza, ha nem enyhülnek a tünetek.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "2",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "influenza-like symptoms",
+          "evidence": "Kiss Lajos érkezett hozzánk az influenzaszerű tüneteivel",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Adjunk neki antivirális gyógyszert, talán oszeltamivirt, vagy ne is, inkább maradjunk a paracetamolnál",
+          "confidence": 0.9
+        },
+        {
+          "field": "tovabbkuldes",
+          "value": "2",
+          "evidence": "Táppénzre ugyan nem tudom engedni, kérdezze meg a háziorvosát",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Dr. Pepszi Béla vagyok, ma Pálfai Zsuzsi tengerimalacával foglalkozunk. A malacka állandóan álmosságról panaszkodik. Várjunk csak, legalábbis Zsuzsi mondta, hogy sokat alszik. Lehet, hogy valami vérszegénység áll a háttérben, bár nem tudom pontosan. Esetleg adjunk neki vitamint... vagy inkább vasat? Vagy mégis inkább a táplálékon változtassunk először és majd meglátjuk. Kezdjünk el adni zöldségeket, talán gazdagabb tápanyagokban. Ha nem változik, talán érdemes lenne vérvizsgálatot végezni. Először nézzük meg, hogyan reagál a táplálkozás változására.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Vérszegénység gyanúja",
+          "evidence": "Lehet, hogy valami vérszegénység áll a háttérben.",
+          "confidence": 0.6
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, dr. Pepszi Béla vagyok, ma György bácsival vagyunk itt, aki a derékfájdalma miatt keresett fel minket. Először is azt hittem, hogy talán valami sérv van, de aztán már nem is tudom... lehet, hogy mégis csak egy izomlazítsó kéne? De várjunk, irányítsuk inkább reumatológushoz, vagy ne. Mindenesetre kapjon egy kis fájdalomcsillapítót, diclofenacot, mondjuk napi kétszer. Vagy ne, inkább egyszer este. Fizikoterápiát is javasolnék neki, de nem vagyok biztos benne, hogy ez a legjobb ötlet. Megbeszéljük majd a következő látogatásnál.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "1",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Derékfájdalom",
+          "evidence": "György bácsi derékfájdalma miatt keresett fel minket.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Fájdalomcsillapító felírása",
+          "quantity_me": 1,
+          "evidence": "Kapjon egy kis fájdalomcsillapítót, diclofenacot, mondjuk napi kétszer.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "tovabbkuldes",
+          "value": "1",
+          "evidence": "irányítsuk inkább reumatológushoz",
+          "confidence": 0.8
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Kapjon egy kis fájdalomcsillapítót, diclofenacot, mondjuk napi kétszer.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, dr. Pepszi Béla vagyok, ma Sárika néni skót juhászkutyája jött el hozzánk, akit furcsa kiütések gyötörnek. Elsőre azt gondoltam, hogy talán valami gombás fertőzés, de nem, lehet, hogy allergiás reakció. Mégis, csináljunk egy bőrkaparék vizsgálatot először, aztán meglátjuk. Vagy ne is, inkább adjuk neki kortikoszteroidot egy kúra erejéig, aztán talán elmúlik. Bár nem tudom, lehet jobb lenne egy újfajta samponnal próbálkozni. Mindent kísérletezzünk ki. Az is lehet, hogy megkérdezzük az allergológust először. És nézzük meg, hogyan reagál a kutya az áttérő táplálkozásra.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Allergiás reakció",
+          "evidence": "Lehet, hogy allergiás reakció.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Bőrkaparék vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Csináljunk egy bőrkaparék vizsgálatot.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, dr. Pepszi Béla vagyok, ma Pintér János cicáját vizsgáljuk, akinek fogíny gyulladása van. Valami komolyabb probléma lehet itt, de nem vagyok biztos benne. Esetleg adjak neki antibiotikumot? Vagy inkább csak mossuk és használjunk helyi gélt? Mégis az antibiotikum lehet a megoldás, vagy mégsem. Talán próbáljunk meg egy új fogápolási módot. És ha nem javul, el kéne küldeni szájsebészhez. De reméljük, hogy a lokális kezelés eredményes lesz. Ha továbbra is problémák lennének, vissza kell jönnie egy alaposabb vizsgálatra.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "1",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Fogíny gyulladás",
+          "evidence": "Pintér János cicáját vizsgáljuk, akinek fogíny gyulladása van.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Esetleg adjak neki antibiotikumot?",
+          "confidence": 0.7
+        },
+        {
+          "field": "tovabbkuldes",
+          "value": "1",
+          "evidence": "el kéne küldeni szájsebészhez",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Kiss Péter, 34 éves férfi. Nos, a tegnapi vizsgálatokat figyelembe véve, először úgy gondoltam, hogy antibiotikumot írnék fel, de igazából, nem, azt hiszem, inkább valami fájdalomcsillapítóra lenne szüksége. Vagy inkább várjunk még ezzel, és nézzük meg, hogy a tünetek maguktól enyhülnek-e? Ami a táppénzt illeti, bizonytalan vagyok, talán egy hét elég lesz. Vagy inkább kettő? Az ellátás típusa legyen járóbeteg, de mégse, inkább fekvőbetegként kellene kezelni, mert úgy tűnik, komolyabb a helyzet. Ajánlom, hogy menjen el egy belgyógyászati konzíliumra, bár lehet, hogy nem is lesz rá szükség. Mégis, biztos, ami biztos, irányítom oda.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "3",
+        "tovabbkuldes": "1",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "1",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "3",
+          "evidence": "Az ellátás típusa legyen járóbeteg, de mégse, inkább fekvőbetegként kellene kezelni.",
+          "confidence": 0.9
+        },
+        {
+          "field": "tovabbkuldes",
+          "value": "1",
+          "evidence": "Ajánlom, hogy menjen el egy belgyógyászati konzíliumra.",
+          "confidence": 0.8
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "1",
+          "evidence": "Ami a táppénzt illeti, bizonytalan vagyok, talán egy hét elég lesz.",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Horváth Jánosné, 58 éves. A laboreredmények alapján elsőre arra gondoltam, hogy egy MRI vizsgálat lenne szükséges, de aztán inkább maradjunk a CT-nél, mert az gyorsabban elérhető. Vagy lehet, hogy mégse kell semmi, csak várjunk, amíg lecseng a dolog. A gyógyszerek közül, nos, legyen egy doboz koleszterincsökkentő... jaj, nem, inkább kettő dobozt írnék fel. De lehet, hogy mégis inkább csak egy. Ami a táppénzt illeti, nos, lehet, hogy nincs is rá szükség, de azért kiírom két hétre. Mégse, módosítom, legyen három nap. Az ellátás típusa maradjon ambulanter, bár lehet, hogy jobb lenne befeküdni a kórházba.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "1",
+        "keresokepesseg": "1",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "...egy MRI vizsgálat lenne szükséges, de aztán inkább maradjunk a CT-nél...",
+          "confidence": 0.9
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "1",
+          "evidence": "...de azért kiírom két hétre. Mégse, módosítom, legyen három nap.",
+          "confidence": 0.8
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "...legyen egy doboz koleszterincsökkentő...",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Csillámpóni, 5 éves szürke ló. A vizsgált tünetek alapján elsőre azt hittem, hogy a ló lábát meg kellene röntgenezni, de most úgy látom, hogy inkább ultrahangra van szükség. Vagy mégis röntgenre? Ááh, tudja mit, inkább pihentetni kéne, és adnék neki egy adag fájdalomcsillapítót, bár lehet, hogy mégse szükséges ez a beavatkozás. A táppénz esetében, ló esetében ez ugye nem releváns, de tartanám őt külön karámban egy ideig. Az ellátás maradjon járóbeteg, bár lehet, hogy fel kellene keresni egy állatkórházat.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "7",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "7",
+          "evidence": "inkább ultrahangra van szükség",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "adnék neki egy adag fájdalomcsillapítót",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Nagy Ádám, 42 éves férfi, a vérnyomása alapján először úgy gondoltam, hogy csak életmódváltás szükséges, de most inkább azt tanácsolnám, hogy kezdjen el vérnyomáscsökkentőt szedni. Vagy mégse kellene? Esetleg keressen fel egy dietetikust? A táppénzzel kapcsolatban, hát, egy hét elegendő lehetne, de lehet, hogy korai kiírni. Az ellátás típusa legyen ambuláns, bár szükség lehet egy éjszakai megfigyelésre is. Ajánlom, hogy menjen el kardiológushoz, bár talán mégse szükséges.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "1",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "1",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Magas vérnyomás",
+          "evidence": "A vérnyomása alapján először úgy gondoltam, hogy csak életmódváltás szükséges.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "1",
+          "evidence": "Az ellátás típusa legyen ambuláns.",
+          "confidence": 0.9
+        },
+        {
+          "field": "tovabbkuldes",
+          "value": "1",
+          "evidence": "Ajánlom, hogy menjen el kardiológushoz.",
+          "confidence": 0.8
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "1",
+          "evidence": "A táppénzzel kapcsolatban, hát, egy hét elegendő lehetne.",
+          "confidence": 0.7
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "kezdjen el vérnyomáscsökkentőt szedni.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szivárvány, 2 éves macska, a hasmenése miatt azt gondoltam, elég lenne egy sima diéta, de most már azt gondolom, talán szükség lenne antibiotikumra is. Vagy talán probiotikumok elégségesek lesznek? Nem is tudom, biztos, ami biztos, figyelje meg egy napig, és akkor majd meglátjuk. Táppénz itt nem játszik, de megfigyelésre javasolnám a külön elhelyezést. Az ellátás tipusát meghagynám járóbetegnek, bár, ha nem javul, kórházi ellátás is szóba jöhet.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "1",
+          "evidence": "Az ellátás tipusát meghagynám járóbetegnek.",
+          "confidence": 0.9
+        },
+        {
+          "field": "tovabbkuldes",
+          "value": "0",
+          "evidence": "Az ellátás tipusát meghagynám járóbetegnek.",
+          "confidence": 0.8
+        },
+        {
+          "field": "baleset_minositese",
+          "value": "00",
+          "evidence": "Nincs említés balesetről.",
+          "confidence": 0.95
+        },
+        {
+          "field": "beavatkozas_jellege",
+          "value": "V",
+          "evidence": "Az ellátás tipusát meghagynám járóbetegnek.",
+          "confidence": 0.85
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "0",
+          "evidence": "Táppénz itt nem játszik.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Tóth Elvira, 63 éves nőbeteg, először is, a szívpanaszai miatt, azt hittem, hogy azonnali kórházi beavatkozás szükséges, de most már látom, hogy esetleg csak gyógyszerrel is kordában tartható lenne. Vagy mégis szükség lenne beutalóra? A táppénz korszelete legyen két hét, bár lehet, hogy kevesebb is elég. Az ellátás típusa fekvőbeteg, de mégis, lehet, hogy ambulánsan is kezelhető. A gyógyszerek közül, nos, talán a vérhígítóra szükség lenne, vagy mégse?",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "7",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "A",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "1",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "szívpanaszok",
+          "evidence": "A beteg szívpanaszai miatt gondolták, hogy kórházi beavatkozás szükséges.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "7",
+          "evidence": "Az ellátás típusa fekvőbeteg, de mégis, lehet, hogy ambulánsan is kezelhető.",
+          "confidence": 0.9
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "1",
+          "evidence": "A táppénz korszelete legyen két hét.",
+          "confidence": 0.8
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "A gyógyszerek közül, nos, talán a vérhígítóra szükség lenne.",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Ludvig, 8 éves tacskó, első ránézésre úgy gondoltam, talán csak étrendi változtatásra van szükség, de most már azt hiszem, lehet, hogy inkább beavatkozás szükséges a fogkő leszedésére. Vagy talán mégse? A gyógyszerek közül javasolnám a fájdalomcsillapítót, vagy inkább mégse? A táppénz itt is irreleváns, de lehet, hogy pihentetni kellene a kutyust. Az ellátás típusa legyen járóbeteg, de ha a helyzet romlik, felmerülhet az állatkórházi ellátás.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "1",
+          "evidence": "Az ellátás típusa legyen járóbeteg.",
+          "confidence": 0.8
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "0",
+          "evidence": "A gyógyszerek közül javasolnám a fájdalomcsillapítót, vagy inkább mégse?",
+          "confidence": 0.6
+        }
+      ],
+      "validation": {
+        "errors": [
+          {
+            "field": "ellatas_tipusa",
+            "code": "invalid_value",
+            "message": "Az ellátás típusa nem felel meg a megadott kategóriáknak."
+          }
+        ],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Bodnár István, 50 éves, nos, a panaszai alapján kezdetben azt mondtam volna, hogy szükség van gyógytornára, de aztán inkább a fájdalomcsillapító mellett döntöttem. Vagy lehet, hogy mégis hasznos lenne a torna? A táppénz kérdése, talán egy hét lenne szükséges, vagy ne is írjam ki még? Az ellátás típusa legyen ambuláns, bár, ha a fájdalom nem csillapodik, szükség lehet további vizsgálatokra.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "fájdalomcsillapító mellett döntöttem",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Bogáncs, 3 éves golden retriever, a tünetek alapján elsőre úgy véltem, a kutya csak egy egyszerű gyomorrontásban szenved, de most már azt hiszem, lehet, hogy egy komolyabb gyomorvizsgálatra lenne szükség. Vagy talán mégse? A táppénz ebben az esetben nem játszik szerepet, de diétára állítanám néhány napig. Az ellátás típusa lenne járóbeteg, de ha a tünetek súlyosbodnak, kórházi ellátásra is szükség lehet.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "1",
+          "evidence": "Az ellátás típusa lenne járóbeteg.",
+          "confidence": 0.9
+        },
+        {
+          "field": "tovabbkuldes",
+          "value": "0",
+          "evidence": "A táppénz ebben az esetben nem játszik szerepet.",
+          "confidence": 0.8
+        },
+        {
+          "field": "baleset_minositese",
+          "value": "00",
+          "evidence": "Nincs említés balesetről.",
+          "confidence": 0.95
+        },
+        {
+          "field": "beavatkozas_jellege",
+          "value": "V",
+          "evidence": "A tünetek alapján elsőre úgy véltem, a kutya csak egy egyszerű gyomorrontásban szenved.",
+          "confidence": 0.85
+        },
+        {
+          "field": "labor_keres",
+          "value": "0",
+          "evidence": "Nincs említés laborvizsgálatról.",
+          "confidence": 0.9
+        },
+        {
+          "field": "kepalkoto_keres",
+          "value": "0",
+          "evidence": "Nincs említés képalkotó vizsgálatról.",
+          "confidence": 0.9
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "0",
+          "evidence": "Nincs említés CT, MRI vagy PET vizsgálatról.",
+          "confidence": 0.9
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "0",
+          "evidence": "A táppénz ebben az esetben nem játszik szerepet.",
+          "confidence": 0.9
+        },
+        {
+          "field": "utikoltseg",
+          "value": "0",
+          "evidence": "Nincs említés útiköltségről.",
+          "confidence": 0.9
+        },
+        {
+          "field": "teritesi_kategoria",
+          "value": "01",
+          "evidence": "Nincs említés térítésről.",
+          "confidence": 0.9
+        },
+        {
+          "field": "fizioterapia",
+          "value": "0",
+          "evidence": "Nincs említés fizioterápiáról.",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_segedeszkoz",
+          "value": "0",
+          "evidence": "Nincs említés segédeszközről.",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "0",
+          "evidence": "Nincs említés gyógyszerről.",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyfurdo",
+          "value": "0",
+          "evidence": "Nincs említés gyógyfürdőről.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Varga Teréz, 47 éves nő, eleinte úgy gondoltam, hogy az ízületi problémáira csak pihenést javasolnék, de aztán inkább a fizioterápia mellett döntöttem. Vagy mégis csak a teljes pihenés lenne a legjobb? A táppénz tervezésekor két héttel számoltam, de lehet, hogy elég lesz egy is. Az ellátás típusa legyen járóbeteg, de fontolóra venném egy reumatológus szakorvosi vizsgálatát is.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "1",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "1",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "1",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "ízületi probléma",
+          "evidence": "Varga Teréz, 47 éves nő, ízületi problémáira pihenést javasolnék.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "1",
+          "evidence": "Az ellátás típusa legyen járóbeteg.",
+          "confidence": 0.9
+        },
+        {
+          "field": "tovabbkuldes",
+          "value": "1",
+          "evidence": "fontolóra venném egy reumatológus szakorvosi vizsgálatát is.",
+          "confidence": 0.8
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "1",
+          "evidence": "A táppénz tervezésekor két héttel számoltam.",
+          "confidence": 0.8
+        },
+        {
+          "field": "fizioterapia",
+          "value": "1",
+          "evidence": "de aztán inkább a fizioterápia mellett döntöttem.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Pepszi Béla professzor vagyok, ma egy érdekes esetet hoztam Önöknek. A beteget, Lujzi kutyát, alapos vizsgálatnak vetettük alá, mivel gazdája szerint szokatlanul viselkedik. Elsőre azt gondoltam, hogy talán valamilyen fertőzésről lehet szó, de ahogy jobban megnéztük, úgy tűnt, hogy inkább valamilyen allergiás reakció lehet. Kezdetben két doboz antihisztamin tablettát javasoltam... jaj várj, nem, mégis csak egy doboz kell. A lényeg, hogy az injekciós terápia helyett tablettás kezelést kezdünk. Igazából azt is mondhatnám, hogy egy kis diétával próbálkozunk először... de nem, ez így inkább maradjon, hiszen a tulajdonos is így kéri.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Allergiás reakció",
+          "evidence": "A vizsgálat alapján allergiás reakcióra gyanakodtak.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Kezdetben két doboz antihisztamin tablettát javasoltam... jaj várj, nem, mégis csak egy doboz kell.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, Pepszi Béla vagyok, és ma különleges látogatónk volt, egy vadászgörény nevéhez hűen, Daliás. A panaszok főként állandó hasmenés és étvágytalanság. Elsőként azt gondoltam, hogy talán valamilyen parazitás fertőzés... Hülyeség, hiszen a laboreredmények ezt kizárták. Végül antibiotikumot kapott. De várjunk csak, talán probiotikum lenne a helyes út... Biztos, ami biztos, mindkettőt felírom, úgy lesz a legjobb.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "2",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Állandó hasmenés és étvágytalanság",
+          "evidence": "A panaszok főként állandó hasmenés és étvágytalanság.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "2",
+          "evidence": "Biztos, ami biztos, mindkettőt felírom, úgy lesz a legjobb.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Ma Betti, a tengerimalac került elénk, aki megmagyarázhatatlan kiütésekkel érkezett. Először arra gondoltam, hogy valami diétás probléma, de mivel bőrelváltozásról van szó, lehet inkább bőrgyógyászatilag kellene nézni... hm, talán bőrápoló krémet kellene javasolni, de mégis, végül is inkább egy E-vitamin kúrával próbálkozunk, hogy a bőre helyrejöjjön.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Bőrelváltozás",
+          "evidence": "Bőrelváltozásról van szó, lehet inkább bőrgyógyászatilag kellene nézni.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Pepszi Béla professzor vagyok, a mai páciensünk Klára néni, aki állandó derékfájdalommal jött. Kezdeti elképzelésem szerint valami komolyabb vizsgálatra van szükség, mint egy MRI... de várjunk, lehet, hogy ez túlzás, inkább csak egy röntgen lesz elég. A kezelésére izomlazítót adtam, de talán inkább gyógytorna... nem is tudom, talán menjen el fizioterápiára, de mégse, inkább ne.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "derékfájdalom",
+          "evidence": "Klára néni, aki állandó derékfájdalommal jött.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "röntgen",
+          "quantity_me": 1,
+          "evidence": "inkább csak egy röntgen lesz elég",
+          "confidence": 0.7
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "inkább csak egy röntgen lesz elég",
+          "confidence": 0.7
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "A kezelésére izomlazítót adtam",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A mai nap egy különleges macska, Zora, érkezett a rendelőbe. Gazdája szerint étvágytalan és nyugtalan. Első gondolatom az volt, hogy talán zavarja valamilyen környezeti változás, de végül a vérvizsgálatok alapján inkább vesebetegségnek tűnik. Eleinte vesediétát javasoltam, de jobban átgondolva inkább infúziós kezelésre küldjük tovább. Esetleg gyógyszeres kezelést is fontolóra vettünk, de várjunk, most először inkább maradjunk az infúziónál.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Vesebetegség",
+          "evidence": "A vérvizsgálatok alapján inkább vesebetegségnek tűnik.",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Infúziós kezelés",
+          "quantity_me": 1,
+          "evidence": "inkább infúziós kezelésre küldjük tovább",
+          "confidence": 0.85
+        }
+      ],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "vérvizsgálatok alapján inkább vesebetegségnek tűnik",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Pepszi professzor vagyok, és ma egy különleges esetet szeretnék bemutatni, Matyi, a papagáj. A tulajdonos szerint szokatlanul kevésbé aktív, és néha nehezen lélegzik. Azonnal a szívproblémákra gyanakodtam... de várjunk, lehet, hogy inkább légúti fertőzés. Az EKG eredmények alapján szükség lehet antibiotikum kúrára... vagy várjunk, talán inkább valami vitamin kiegészítő kellene, a probléma természetéből adódóan.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Légúti fertőzés",
+          "evidence": "A tulajdonos szerint szokatlanul kevésbé aktív, és néha nehezen lélegzik.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Az EKG eredmények alapján szükség lehet antibiotikum kúrára.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Ma egy különleges ló, Suttogó, volt a vendégünk, akinek nyugtalanító csomót találtak a nyakán. Először arra gondoltam, hogy egy egyszerű tályog, de a tapintás alapján inkább ciszta lehet. Sebészeti eltávolítást javaslok, de a röntgen eredménye alapján mégis... talán mégsem, inkább csak egy alapos megfigyelés szükséges... nem is tudom, talán mégis vágjunk bele, de kezdjük inkább egy ultrahanggal.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "7",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Ciszta a nyakon",
+          "evidence": "Nyugtalanító csomót találtak a nyakán, inkább ciszta lehet.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Ultrahang vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Kezdjük inkább egy ultrahanggal.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "7",
+          "evidence": "Kezdjük inkább egy ultrahanggal.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Pepszi professzor itt, ma egy különös esetet vizsgáltunk meg, egy teknőst, akinek furcsa bőrszíne van. Először ásványianyag-hiányra gyanakodtam, de az étrend alapján valami fertőzés lehet a háttérben. Elkezdtem az antibiotikum kúrát, de lehet, hogy a napfényhiány az oka. Inkább adok neki némi D-vitamin kiegészítőt... vagy várjunk, nézzük inkább további laboreredményekkel.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Fertőzés gyanúja",
+          "evidence": "Az étrend alapján valami fertőzés lehet a háttérben.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Antibiotikum kúra",
+          "quantity_me": 1,
+          "evidence": "Elkezdtem az antibiotikum kúrát.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Elkezdtem az antibiotikum kúrát.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Mai páciensünk Péter, aki tartós fejfájással érkezett. Kezdetben CT-vizsgálatot javasoltam... hülyeség, sima röntgen elég, talán csak migrén, de végül mégiscsak inkább ezt a vizsgálatot kéne választani. Esetleg a fájdalomcsillapítók segíthetnek, de hagyjuk inkább, próbáljon meg változtatni az életmódján először.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "1",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Migrén",
+          "evidence": "A páciens tartós fejfájással érkezett, talán csak migrén.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Röntgen vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Kezdetben CT-vizsgálatot javasoltam... sima röntgen elég.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "sima röntgen elég",
+          "confidence": 0.9
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "Kezdetben CT-vizsgálatot javasoltam",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Pepszi Béla vagyok, ma egy kedves tacskó, Max került hozzánk, akinek furcsán kitüremkedik valami a hasa környékén. Elsősorban daganatra gyanakodtam... de várjunk, lehet csak egy sérv. A műtéti beavatkozás szükségességének kérdése kicsit bizonytalan, hiszen először is a méretét kell felmérni. Továbbküldjük ultrahangra, és majd meglátjuk, mi lesz a végső diagnózis. Végül mégis úgy döntünk, hogy próbáljuk meg kezelni ezt egy szoros megfigyeléssel először.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "7",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Daganat vagy sérv gyanú",
+          "evidence": "Elsősorban daganatra gyanakodtam... de várjunk, lehet csak egy sérv.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Ultrahang vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Továbbküldjük ultrahangra, és majd meglátjuk, mi lesz a végső diagnózis.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "7",
+          "evidence": "Továbbküldjük ultrahangra, és majd meglátjuk, mi lesz a végső diagnózis.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Pepszi Béla professzor vagyok, és ma egy új pacienssel találkoztam, nevezetesen egy macskával, akinek extra sajátságos problémája van. A cica tulajdonosa először mondta, hogy a cica csak furcsán jár, de aztán kiderült, hogy valójában nem jár, csak fura hangokat ad ki. Szóval, mit is csináljunk? Először CT-t javasoltam, majd eszembe jutott, hogy talán felesleges, végül is, talán csak egy egyszerű vérvétel is elég lenne. Mondjuk, lehet, hogy mégis a vérvétel jobb lenne, de... Igen, talán a fizikoterápia is szóba jöhetne, de inkább mégse. A cica gazdája kérdezte, hogy a táppénz szóba jöhet-e ebben az esetben, de elmagyaráztam, hogy a cicák nem kapnak táppénzt, legalábbis nálunk nem. Esetleg próbáljuk ki a diétát, bár mondom, talán mégse, inkább hagyjuk ki a diétát. Végül felírtam neki egy gyógyszert, de most nem jut eszembe a pontos neve. Talán szükség lesz további vizsgálatokra, de ezt még meggondolom.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "1",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "vérvétel is elég lenne",
+          "confidence": 0.9
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "Először CT-t javasoltam",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Végül felírtam neki egy gyógyszert",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Ma egy kutyával foglalkoztam, akinél a gazdája szerint súlyos légzési panaszok jelentkeztek. Amikor megvizsgáltam, először azt gondoltam, hogy talán valamilyen allergiáról van szó, de aztán rájöttem, hogy inkább anatómiai probléma lehet. Lehet, hogy egy speciális műtétre lesz szükség, de inkább mégse, mert lehet, hogy csak gyógyszeres kezelés is segíthet. Mondtam a tulajdonosnak, hogy nézzen utána a gyógyszer nevén, amit ajánlottam, de talán mégse az lesz a jó, amit először javasoltam. Az ellátás típusa lehetne ambuláns, de lehet mégis inkább fekvő. Végül arra kértem őket, hogy jöjjenek vissza kontrollra, de most hirtelen nem tudom megmondani, hogy melyik napra.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "2",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "súlyos légzési panaszok",
+          "evidence": "A kutyánál súlyos légzési panaszok jelentkeztek.",
+          "confidence": 0.7
+        },
+        {
+          "bno10": null,
+          "text_label": "anatómiai probléma",
+          "evidence": "Rájöttem, hogy inkább anatómiai probléma lehet.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "2",
+          "evidence": "Végül arra kértem őket, hogy jöjjenek vissza kontrollra.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 35 éves férfi pácienst vizsgáltam, aki állítólag erős hátfájdalmakra panaszkodik. Először azt gondoltam, hogy talán lumbágó, de aztán kiderült, hogy inkább izomgörcs. Egy darabig azt hittem, hogy szüksége lesz MRI-re, de talán csak egy sima röntgen is megteszi. Vagy mégse? Esetleg kipróbálhatná a fizioterápiát, vagy talán... nem is tudom. Megírtam neki egy beutalót, de most nem emlékszem, hogy pontosan hová. A táppénz kérdése is felmerült, de talán mégse lenne indokolt. Esetleg, valamilyen relaxációs gyakorlatokat is ajánlhattam volna, de ez most nem jutott eszembe akkor.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Izomgörcs",
+          "evidence": "A páciens izomgörcsre panaszkodik, nem lumbágóra.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Röntgen vizsgálat",
+          "quantity_me": 1,
+          "evidence": "A páciens esetében röntgen vizsgálatot fontolgattam.",
+          "confidence": 0.7
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "A páciens esetében röntgen vizsgálatot fontolgattam.",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy négyéves labradorral foglalkoztam. A gazdája azt mondta, hogy a kutya különösen nyugtalan, és furcsán viselkedik. Először azt hittem, hogy hormonális probléma állhat a háttérben, de... nem is tudom. Talán valamilyen mentális probléma is lehet. Először azt javasoltam, hogy végezzünk hormonszint vizsgálatot, de rájöttem, hogy talán felesleges. Végül javasoltam egy egyszerű viselkedésterápiát, de most úgy érzem, lehet, hogy az se volt helyes. Gondoltam arra is, hogy gyógyszert írok fel, de aztán úgy döntöttem, hogy mégse. Ellátásként ambuláns kezelés is felmerült, de lehet inkább fekvő lenne a helyes út, nem tudom.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "7",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "tovabbkuldes",
+          "value": "7",
+          "evidence": "Ellátásként ambuláns kezelés is felmerült, de lehet inkább fekvő lenne a helyes út",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Kezeltem egy 50 éves női pácienst, aki rendre mellkasi fájdalmakra panaszkodott. Eleinte szívbetegségre gyanakodtam, de aztán arra gondoltam, hogy talán nem is a szívével van probléma. Aztán eszembe jutott, hogy talán csak egy egyszerű izomláz. Először szívkatéterezést javasoltam, de aztán rájöttem, hogy felesleges lenne, talán egy stresszteszt is megteszi... vagy inkább mégse. Az ellátás lehetne ambuláns, vagy talán inkább fekvő? Nem is tudom. Végül felírtam neki valamilyen szívgyógyszert, de most nem tudom a nevét. A táppénz kérdésén töprengtünk, de végül úgy döntöttem, hogy talán mégse szükséges neki.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Mellkasi fájdalom",
+          "evidence": "Páciens mellkasi fájdalmakra panaszkodott.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Felírtam neki valamilyen szívgyógyszert.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy csincsillát hoztak be hozzám, aki állítólag nem akar enni. Először valamilyen fogproblémára gondoltam, de aztán úgy tűnt, talán inkább emésztési probléma lehet. Végül vérvizsgálatot ajánlottam, de aztán úgy döntöttem, hogy talán csak felesleges stressz lenne. Lehet, hogy csak egy diétás változtatás lenne szükséges, de aztán úgy döntöttem, hogy mégse. Az ellátás típusa lehetne ambuláns, de talán inkább legyen fekvő, nem tudom. Felírtam valamilyen tápszert, de aztán inkább úgy döntöttem, hogy mégse adjuk neki. Táppénz erről az esetről nem lehet szó, de a gazdája említette, hogy szeretne valamilyen biztosítást kötni a csincsillára.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "7",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "7",
+          "evidence": "Az ellátás típusa lehetne ambuláns, de talán inkább legyen fekvő.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Megvizsgáltam egy idős pácienst, aki hosszú ideje szenved ízületi fájdalmaktól. Először úgy tűnt, hogy talán reumatoid artritiszről van szó, de aztán rájöttem, hogy inkább valamilyen más ízületi probléma lehet. Gondoltam, írok fel neki valamilyen erős fájdalomcsillapítót, de aztán inkább úgy döntöttem, hogy ne. Lehet, hogy jobb lenne a fizioterápia, de aztán rájöttem, hogy talán mégse. Az ellátás lehetne ambuláns, de talán inkább javaslom a fekvőbeteg-ellátást. Táppénz kérdése itt is felmerült, de úgy döntöttünk, hogy mégse. Felírtam neki egy gyulladáscsökkentőt, aminek sajnos most nem tudom pontosan a nevét.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "7",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "ízületi fájdalom",
+          "evidence": "A páciens hosszú ideje szenved ízületi fájdalmaktól.",
+          "confidence": 0.8
+        },
+        {
+          "bno10": null,
+          "text_label": "reumatoid artritisz",
+          "evidence": "Először úgy tűnt, hogy talán reumatoid artritiszről van szó.",
+          "confidence": 0.6
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Felírtam neki egy gyulladáscsökkentőt.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 12 éves kislányt vizsgáltam, aki erős hasi fájdalmakkal jelentkezett. Az első gondolatom vakbélgyulladás volt, de rájöttem, hogy jobb, ha nem ugrunk ilyen gyorsan következtetésre. Végül megállapítottam, hogy talán menstruációs görcsökről van szó, de aztán megint elbizonytalanodtam. Talán jobb lenne, ha csak megfigyelnénk, de közben szinte biztosan jobban járunk, ha végzünk egy ultrahangot... vagy mégse. Végül úgy döntöttem, hogy azt javaslom, menjen el dietetikushoz. Az ellátás lehetne ambuláns, de talán mégse. Táppénz itt nem indokolt, de a szülők kérdezték, hogy milyen gyógyszert tudnék javasolni, amit most hirtelen nem is tudok.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "1",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "7",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Hasi fájdalom, menstruációs görcs gyanú",
+          "evidence": "A kislány erős hasi fájdalmakkal jelentkezett, menstruációs görcs gyanú.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Ultrahang vizsgálat javasolt",
+          "quantity_me": 1,
+          "evidence": "Javasolt ultrahang vizsgálat a hasi fájdalom miatt.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "tovabbkuldes",
+          "value": "1",
+          "evidence": "Javaslom, menjen el dietetikushoz.",
+          "confidence": 0.9
+        },
+        {
+          "field": "kepalkoto_keres",
+          "value": "7",
+          "evidence": "Végzünk egy ultrahangot... vagy mégse.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy nyuszit hoztak be, aki nem hajlandó inni. Az első gondolatom az volt, hogy valami fertőzése lehet, de aztán rájöttem, hogy lehet, hogy csak valami stresszhatás érhette. Először azt gondoltam, hogy javasoljak egy antibiotikum-kúrát, de aztán inkább úgy döntöttem, hogy ne terheljük fölöslegesen. Talán jobb lenne egyszerűen megváltoztatni a környezetét. Az ellátást illetően, lehetne ambuláns, de talán inkább felügyelt fekvő kezelést érdemelne. Táppénz sajnos nem merült fel, bár a gazdája érdeklődött, hogy melyik biztosítótársaságnál köthetne állatbiztosítást.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "7",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Fertőzés gyanúja",
+          "evidence": "Az első gondolatom az volt, hogy valami fertőzése lehet.",
+          "confidence": 0.7
+        },
+        {
+          "bno10": null,
+          "text_label": "Stresszhatás",
+          "evidence": "lehet, hogy csak valami stresszhatás érhette.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "tovabbkuldes",
+          "value": "7",
+          "evidence": "talán inkább felügyelt fekvő kezelést érdemelne.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy középkorú férfival volt dolgom, aki krónikus fejfájással érkezett. Először azt gondoltam, hogy migrén, de aztán úgy döntöttem, hogy talán csak stressz okozta. Azt javasoltam, hogy próbálja ki a meditációt, de aztán úgy éreztem, hogy talán mégse az a legjobb ötlet. Felírtam neki egy fájdalomcsillapítót, de lehet, hogy inkább nem kellett volna, talán az étrendje megváltoztatása többet segítene. Az ellátás lehetne ambuláns, de aztán mégis elbizonytalanodtam, talán egy rövid kórházi tartózkodás se ártana. A táppénz lehetősége is felvetődött, de végül nem javasoltam neki.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Krónikus fejfájás",
+          "evidence": "Krónikus fejfájással érkezett, migrén vagy stressz okozta lehet.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Felírtam neki egy fájdalomcsillapítót.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szia, Péter, itt van velem a paciens, vagyis pontosabban a kis cica, Luci. Látom, hogy kicsit lehangolt, nincs is igazán étvágya, és amióta leesett a kanapéról, sántikál is. Most akkor nézzük csak... először CT-t kéne csinálni, de nem, az túl sok lenne, talán egy egyszerű röntgen elég. Várjunk! Inkább vérvizsgálat, az biztosabb. Ami a kezelést illeti, most nem is tudom, talán javasoljuk a pihenést, vagy... fisioterápiát. De hát igazából nem, a fizioterápia nem segít most sokat. Talán elég lesz valami fájdalomcsillapító, de meg kell néznem, hogy gyulladáscsökkentőt kaphat-e. Akkor tessék, addig is figyeld a viselkedését, és majd meglátjuk, hogyan javul. Ja, táppénz... ja, állatoknak nem kell táppénz. Köszönöm.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "talán egy egyszerű röntgen elég",
+          "confidence": 0.9
+        },
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "Inkább vérvizsgálat, az biztosabb",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Talán elég lesz valami fájdalomcsillapító",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, Dr. Pepszi, itt van velünk Kati néni, aki panaszkodik, hogy fáj a dereka és sajog a vállai. Néztem a korábbi kórtörténetét, és lehet, hogy ízületi gyulladás, de talán csak egy rossz matrac. Először NSAID-ot akartam írni, de aztán rájöttem, hogy inkább valami könnyebb fájdalomcsillapítót kéne szedjen. Talán... nem is tudom, fizio... nem, fizio terápia nem is... talán masszázs jobb lenne. Ellátás típusát kéne még megnézni, de dönteni kellene a terápiáról is, hogy ne legyen túl megterhelő. A beutalót meg majd elintézem, de nem biztos, hogy szükség lesz rá, mert lehet, hogy elég a házi kezelés.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Ízületi gyulladás",
+          "evidence": "Lehet, hogy ízületi gyulladás, de talán csak egy rossz matrac.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "0",
+          "evidence": "Először NSAID-ot akartam írni, de aztán rájöttem, hogy inkább valami könnyebb fájdalomcsillapítót kéne szedjen.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szervusz, Béla vagyok, itt van a páciens, Ottó, a bulldog, aki köhög és néha furcsán zihál. Lehet, hogy szívprobléma, de inkább csak valami apró légúti fertőzés. Ne is menjünk CT-re, az túl sok stressz neki. Akkor kellene talán antibiotikum, de mielőtt azt írom, inkább egy köpettenyésztést kéne csinálni. Vagy... nem is, lehet, hogy csak pihentetni kellene otthon. Meg kérdéses, hogy javasoljam-e a speciális diétát, ami a légzését segíthetné? Lehet, hogy inkább csak a folyadékbevitel növelésére kéne fókuszálni. Most akkor próbáljunk ki pár napig valami könnyű fájdalomcsillapítót is, az segíthet, de közben figyeljük a hangulatát is.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "4",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Légúti fertőzés",
+          "evidence": "A páciens köhög és néha furcsán zihál, lehet légúti fertőzés.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Köpettenyésztés",
+          "quantity_me": 1,
+          "evidence": "Mielőtt antibiotikumot írok, inkább egy köpettenyésztést kéne csinálni.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Akkor kellene talán antibiotikum.",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, itt van nálam a páciens, Ádám, aki műtét után érkezett rehabilitációra. Azt mondta, fáj a hege, de nem biztos, hogy ez probléma. Inkább ideges, mint fájdalmas. Első gondolatom az, hogy adok neki antibiotikumot, de az a helyzet, hogy nem lenne célszerű. Lehet, hogy csak pihennie kéne, és valami nyugtató hatású kenőcsöt kéne alkalmazni. Nem is tudom, ezt a fizioterápiás dolgot is átgondolnám, talán az elején elég lenne valami egyszerűbb gyakorlat. A jövő hétre beidegzett ellátás típusa is legyen talán ambuláns, de még ezt se tudom, aztán majd meglátjuk, hogyan reagál. Nem is tudom, hogy a további kezelés szükséges-e.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Rehabilitáció műtét után",
+          "evidence": "Páciens műtét után érkezett rehabilitációra.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, itt vagyunk a következő páciensünkkel, Lilla nénivel, aki a térdfájdalom miatt jött. Lehet, hogy valami gyulladás, de meg... nem is tudom, mennyire komoly. Friss röntgenre van szükség, bár lehet, hogy elég lenne egy sima ultrahang is. Elsőre ízületi gyulladásra gyanakszom, már írnám neki az NSAID-ot, de lehet, hogy inkább csak pihennie kéne. Esetleg fizioterápia is, de az meg neki lehet, nem is kéne, mert simán diéta és pihenéssel is javulhatna. Meg aztán a táppénzes papírt... ja, neki kéne. Majd meglátjuk, hogyan alakulnak a tünetei.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "1",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "M17.9",
+          "text_label": "Ízületi gyulladás",
+          "evidence": "Elsőre ízületi gyulladásra gyanakszom.",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Röntgen vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Friss röntgenre van szükség.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "Friss röntgenre van szükség, bár lehet, hogy elég lenne egy sima ultrahang is.",
+          "confidence": 0.8
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "1",
+          "evidence": "Meg aztán a táppénzes papírt... ja, neki kéne.",
+          "confidence": 0.7
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Már írnám neki az NSAID-ot.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, Béla vagyok, itt van a kis páciens, Bodza, a törpemalac. Teljesen furcsán viselkedik, nem eszik rendesen, és állandóan harapdálja a saját farkát. Lehet, hogy valamilyen viselkedészavar, de nem vagyok benne biztos. Az első ötletem az, hogy nyugtató kellene, de aztán lehet, hogy csak több szociális interakcióra van szüksége. Nem is tudom, inkább pihenéssel próbálkozzunk, talán valami feromonspray is segítene... aztán meg eldönthetnénk később, hogy a viselkedésterápiát javasoljuk. A chipjét is meg kéne nézni, de hát az nem nagyon fog változtatni. Lehet, hogy csak egyszerű rutinvizsgálat szükséges, de kövessük nyomon!",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Viselkedészavar gyanúja",
+          "evidence": "A páciens furcsán viselkedik, nem eszik rendesen, harapdálja a farkát.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot, itt van nálam a páciens, Tamás, aki sportolás közben megsérült. Azt mondja, a válla kiment, de nem tudja pontosan, hogyan történt. Először azt gondoltam, kellene neki MRI, de közben meg az is lehet, hogy egy sima röntgen is elég. Már írtam is volna a fájdalomcsillapítót, de az a helyzet, hogy talán inkább manuálterápiával lehet segíteni. Meg lehet, hogy pihentetni is kéne egy kicsit, de erről még nincs egyértelmű döntés. Az ellátás típusa... talán otthon is kezelhetné, de nem vagyok biztos benne, hogy táppénzre szükség van...",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "32",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "2",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Vállficam",
+          "evidence": "A páciens sportolás közben megsérült, válla kiment.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Manuálterápia",
+          "quantity_me": null,
+          "evidence": "Talán inkább manuálterápiával lehet segíteni.",
+          "confidence": 0.7
+        }
+      ],
+      "found": [
+        {
+          "field": "baleset_minositese",
+          "value": "32",
+          "evidence": "A páciens sportolás közben megsérült.",
+          "confidence": 0.9
+        },
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "...de közben meg az is lehet, hogy egy sima röntgen is elég.",
+          "confidence": 0.8
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "2",
+          "evidence": "Először azt gondoltam, kellene neki MRI...",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Hello, Dr. Pepszi, itt van egy különös eset, egy 3 éves bernáthegyivel, Baluval, aki mozgáskoordinációs problémákkal küzd. Először valami komoly neurológiai tesztekre gondoltam, de lehet, hogy az csak pénzkidobás. Egy alap mozgásvizsgálat is elég kell, hogy legyen. Az etetését is felül kell vizsgálni; talán egy speciális étrend, mely gazdag omega-3-ban, segíthet. Először valami gyógyszeres kezelést javasoltam volna, de aztán rájöttem, hogy csak fokozatos edzésprogramot kéne elkezdenünk. Ezenkívül, ha az állapot nem javul, talán érdemes lenne egy szakértőhöz fordulni, de nem biztos, hogy azonnal szükséges.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Mozgáskoordinációs problémák",
+          "evidence": "Balu, a bernáthegyi, mozgáskoordinációs problémákkal küzd.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözletem, itt van a páciens, Márta néni, aki a hátfájásával érkezett konzultációra. Először erős gyulladáscsökkentőket akartam felírni, de aztán arra gondoltam, talán elég lesz egy enyhébb fájdalomcsillapító. A diagnosztikai röntgent már felvetettem, de nem egészen biztos, hogy hasznos lenne. Fizioterápia lehet, hogy segítene, de nem biztos, hogy most belevágnék. A diéta is szóba került, hiszen néha az is csodákat tesz. Ami a táppénzt illeti, beszélnünk kell a munkahelyével is, hogy a kezelési tervet összehangoljuk.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "3",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Hátfájás",
+          "evidence": "A páciens hátfájással érkezett konzultációra.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Röntgen",
+          "quantity_me": 1,
+          "evidence": "A diagnosztikai röntgent már felvetettem.",
+          "confidence": 0.7
+        }
+      ],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "3",
+          "evidence": "A páciens konzultációra érkezett.",
+          "confidence": 0.9
+        },
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "A diagnosztikai röntgent már felvetettem.",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, Béla itt, a páciens ma egy kis hörcsög, Misi, akinek a szőre hullik és foltokban kopaszodik. Ez elsőre allergiának tűnhet, de lehet, hogy csak stressz. Kezdtem volna antihisztaminokkal, de az a helyzet, hogy talán csak valami bőrbarát étrendet kéne kipróbálni. Vajon a vitaminhiány lehet az oka? Először a táplálkozást kéne megvizsgálni, és lehet, hogy kiderül, egy kis változtatás is elég. Esetleg a környezetét is stresszmentesíteni kéne, de nem tudom, hogyan reagálna a különféle feromonspray-re. Meglátjuk, hogy változik-e a helyzet, s aztán eldöntünk bármi komolyabbat.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Allergia vagy stressz okozta szőrhullás",
+          "evidence": "A páciens szőre hullik és foltokban kopaszodik, allergiának tűnhet.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot, itt Pepszi Béla professzor. Ma egy 3 éves tacskóval van dolgom, akinek furcsa bőrkiütései vannak. Először azt hittem, hogy talán bolhák, de most már úgy gondolom, hogy lehet valami allergia is. Talán kéne egy vérvétel... Nem, várjunk csak, inkább egy bőrkaparék vizsgálat kellene. Jó lenne, ha táppénzre vennénk, de ja, az kutyáknál nem működik, úgyhogy csak tüneti kezelést ajánlok, mondjuk bőrnyugtató samponnal. Vagy inkább tablettát?... Aztán meg is gondoltam, tablettát ne adjunk neki.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "bőrkiütés/allergia",
+          "evidence": "A leiratban említett bőrkiütés és allergia gyanúja.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "bőrkaparék vizsgálat",
+          "quantity_me": 1,
+          "evidence": "A leiratban említett bőrkaparék vizsgálat szükségessége.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "A leiratban említett vérvétel szükségessége.",
+          "confidence": 0.6
+        }
+      ],
+      "validation": {
+        "errors": [
+          {
+            "field": "diagnoses.bno10",
+            "code": "missing_value",
+            "message": "A diagnózis BNO-10 kódja hiányzik."
+          },
+          {
+            "field": "procedures.oeno",
+            "code": "missing_value",
+            "message": "A beavatkozás OENO kódja hiányzik."
+          }
+        ],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, az az érdekes, hogy tegnap még egészséges volt a macska. A gazdi azt mondta, hirtelen kezdett sántítani. Gondoltam, megnézzük az izületeit, de talán felesleges... Várjunk csak, mégiscsak érdemes lehet. Szóval röntgent szeretnék kérni, vagy inkább CT-t... ja nem, hülyeség az egész, maradjunk a fizikális vizsgálatnál. Lehet, hogy csak egy izomlazító gyógyszer kell neki, de most hogy jól átgondoltam, nem biztos, hogy kellene gyógyszert adni. Egyelőre figyeljük még egy napig.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "Szóval röntgent szeretnék kérni",
+          "confidence": 0.8
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "vagy inkább CT-t",
+          "confidence": 0.7
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Lehet, hogy csak egy izomlazító gyógyszer kell neki",
+          "confidence": 0.6
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdv, a mai páciensünk egy középkorú férfi, 45 éves, hasfájással. Az első tippem az volt, hogy talán vakbélgyulladás, de a tünetek alapján mégsem, inkább csak egy egyszerű gyomorrontás. Nem is tudom, talán szükséges lenne egy ultrahang... vagy inkább CT... á nem, mégis inkább laborvizsgálatra küldeném. Adjunk neki egy kis diétás tanácsot, vagy mégsem, hiszen lehet, hogy nem tartaná be, akkor inkább gyógyszer, de megint csak elbizonytalanodtam.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Gyomorrontás",
+          "evidence": "A tünetek alapján inkább csak egy egyszerű gyomorrontás.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Ma egy angóra nyúl van nálam, és a hátán furcsa duzzanatok jelentek meg. Először rákra tippeltem, de talán csak egy egyszerű fertőzés. Antibiotikumot kéne adni, bár nem biztos, hogy kell. Lehet, hogy inkább valami természetes kezelést próbáljunk, például krémet. Várjunk csak, ne adjunk még semmit, megfigyeljük egy hétig.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Furcsa duzzanatok a hátán",
+          "evidence": "A hátán furcsa duzzanatok jelentek meg.",
+          "confidence": 0.6
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A mai páciens egy 60 éves nő, aki panaszkodik szédülésre és fáradtságra. Gondoltam, lehet valami vérszegénysége, de aztán rájöttem, hogy lehet, csak fáradt. Talán egy vérkép kellene, vagy inkább inkább egy CT vizsgálat. Nem, hülyeség az egész, lehet, hogy csak több pihenésre van szüksége. Küldjük el pszichológushoz? De lehet, hogy az sem kell.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "1",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Szédülés és fáradtság",
+          "evidence": "A páciens panaszkodik szédülésre és fáradtságra.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Vérkép vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Talán egy vérkép kellene.",
+          "confidence": 0.8
+        },
+        {
+          "oeno": null,
+          "text_label": "CT vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Vagy inkább inkább egy CT vizsgálat.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "Talán egy vérkép kellene.",
+          "confidence": 0.8
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "Vagy inkább inkább egy CT vizsgálat.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Két éves keverék kutyát hoztak be, aki teljesen elvesztette a fogát. Azt hittem először, hogy valami súlyos csontproblémája van, de lehet csak vitaminhiány. Gyakorlatilag táppénzre kellene vennünk, de mivel ez kutya, inkább spec táplálékot ajánlok. Vagy hagyjuk az egészet, és csak figyeljük.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [
+          {
+            "field": "keresokepesseg",
+            "code": "invalid_context",
+            "message": "A keresőképesség elbírálása nem releváns állatok esetében."
+          }
+        ],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A következő betegünk egy 30 éves férfi, akinek makacs fejfájása van. Először a migrénre gyanakodtam, de lehet, hogy csak a stressz. Szóval talán MRI-t kéne végezni... vagy inkább csak egy sima röntgent. Nem is tudom, nem lenne jobb egy pszichológus? De az is lehet, hogy inkább gyógyszerrel próbáljuk megoldani.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "2",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Makacs fejfájás",
+          "evidence": "A beteg makacs fejfájásra panaszkodik.",
+          "confidence": 0.7
+        },
+        {
+          "bno10": null,
+          "text_label": "Migrén gyanú",
+          "evidence": "Először a migrénre gyanakodtam.",
+          "confidence": 0.6
+        },
+        {
+          "bno10": null,
+          "text_label": "Stressz",
+          "evidence": "Lehet, hogy csak a stressz.",
+          "confidence": 0.5
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "MRI vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Talán MRI-t kéne végezni.",
+          "confidence": 0.8
+        },
+        {
+          "oeno": null,
+          "text_label": "Röntgen vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Vagy inkább csak egy sima röntgent.",
+          "confidence": 0.7
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Inkább gyógyszerrel próbáljuk megoldani.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Ma egy 12 éves labradorral dolgozom, aki nem akar enni. Lehet, hogy gyomorrák, de talán csak egyszerű étvágytalanság. Vért kéne venni... vagy mégse, csak próbáljunk meg valami speciális tápot. Közben úgy érzem, talán semmi baja nincsen. Akkor most mi legyen? Figyeljük még pár napig.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "étvágytalanság",
+          "evidence": "Lehet, hogy gyomorrák, de talán csak egyszerű étvágytalanság.",
+          "confidence": 0.6
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 55 éves nő azzal keresett meg, hogy krónikus hátfájása van. Először gerincsérvre gondoltam, de lehet, hogy csak rossz testtartása van. Fizioterápiát ajánlanék, de inkább mégsem, mert talán felesleges. Vagy próbáljunk ki valami gyógyszert, fájdalomcsillapítót. De most átgondolva, lehet, hogy mégsem kellene.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Krónikus hátfájás",
+          "evidence": "Egy 55 éves nő azzal keresett meg, hogy krónikus hátfájása van.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "És itt van egy 7 hónapos kiscica, aki nem szívesen használja a bal melső lábát. Lehet, hogy eltörte, de aztán rájöttem, hogy csak egy kis zúzódás. Szóval röntgen... vagy inkább ne. Talán csak pihenjen egy kicsit. Nem, mégis, inkább próbálkozzunk valami helyi kezeléssel, vagy várjunk csak, tényleg maradjunk a pihenésnél.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Zúzódás a bal melső lábon",
+          "evidence": "A kiscica nem szívesen használja a bal melső lábát, lehet zúzódás.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "0",
+          "evidence": "Szóval röntgen... vagy inkább ne.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot, itt Pepszi Béla professzor beszél. A mai esetünk egy különleges golden retriever, Charlie, akinek furcsa szokásai lettek, például állandóan a kanapé alá bújik. Az első gondolatom volt, hogy talán epilepsziás rohamai vannak, de azt hiszem, ez butaság. Tegnap még azt hittem, hogy az étrendje okozhatja, de ma inkább valami mentális probléma lehet. Talán kezdjük egy vérvizsgálattal, vagy nem, inkább egy CT-vel. Hoppá, nem, bocsánat, azt hiszem, egy sima röntgen elég is lesz. És biztosítok neki ellátást; ja, pontosítanék, hogy végül is a táppénz kérdése nem releváns itt, hiszen ugye állat. És úgy döntöttem, hogy nyugalomra van szüksége, de lehet, hogy egy kis séta segíthetne is, talán... de aztán megint inkább nyugalomra van szüksége. Ja, és természetesen először két doboz gyógyszert akartam felírni, de valójában inkább csak egy doboz szükséges a kedélyjavítóból.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "inkább egy sima röntgen elég is lesz",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "valójában inkább csak egy doboz szükséges a kedélyjavítóból",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szép napot, Pepszi professzor vagyok. A mai alanyunk egy tizenhét éves lány, Lizi, akinek a térde fáj mindenféle ok nélkül. Először fizikoterápiára akartam küldeni, de aztán rájöttem, hogy ez nem jó ötlet. Lehet, hogy jobb, ha műtétet javaslok, de aztán megint elbizonytalanodtam. Talán elég, ha fájdalomcsillapítót szed, de aztán megint, mégiscsak a fizikoterápiát javaslom. Végülis a röntgen után, vagy nem a CT! Igen, a CT-t kell nézni... vagy mégis, elnézést kérek, a sima röntgen elég lesz. És az is lehet, hogy kap pár nap táppénzt, de aztán lehet, hogy dolgozik is majd, ja nem, inkább táppénzen lesz. A fájdalomcsillapítóból pár napra elegendő lesz, bár először fejenként kettőt javasoltam, aztán rájöttem, hogy talán túlzás lenne.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "1",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "1",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Térdfájdalom",
+          "evidence": "A mai alanyunk egy tizenhét éves lány, Lizi, akinek a térde fáj.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Röntgen vizsgálat",
+          "quantity_me": 1,
+          "evidence": "Végülis a röntgen után, vagy nem a CT! Igen, a CT-t kell nézni...",
+          "confidence": 0.7
+        }
+      ],
+      "found": [
+        {
+          "field": "fizioterapia",
+          "value": "1",
+          "evidence": "Végülis a fizikoterápiát javaslom.",
+          "confidence": 0.9
+        },
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "Végülis a röntgen után, vagy nem a CT! Igen, a CT-t kell nézni...",
+          "confidence": 0.7
+        },
+        {
+          "field": "keresokepesseg",
+          "value": "1",
+          "evidence": "És az is lehet, hogy kap pár nap táppénzt.",
+          "confidence": 0.8
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Talán elég, ha fájdalomcsillapítót szed.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Pepszi professzor jelentkezem egy különös esettel. Egy teknős, akinek kibicsaklott a lába. Először azt gondoltam, talán csak egy kis pihenés kell neki, de aztán azt hiszem, nem, lehet, hogy mégis orvosi beavatkozás kell. Bár elsőre azt hittem semmi baj... vagy mégis? Hát legyen mondjuk egy kis fizioterápia, ja de nem, inkább nem. Végül is talán szüksége van egy éjjeliõrre, jaj, bocsánat, egy éjszakai megfigyelésre vagy kicsire, szóval inkább inkubátorban kéne tartani. Először, mondjuk, két hetet javasoltam, de aztán rájöttem, hogy talán három nap is elég lenne!",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot, Pepszi Béla vagyok. Az esetünk ma egy különös felnőtt férfi, aki mindenféle szédülést tapasztal. Először azt hittem, hogy talán csak stresszes, de aztán rájöttem, hogy lehet, hogy vírusfertőzés. Az első gondolatom az volt, hogy CT-re lenne szüksége, de aztán úgy tűnt, hogy inkább MRI-t kéne csinálni. De aztán megint, lehet, hogy elég egy vérvizsgálat. Igen, talán az is elég! Javasoltam fájdalomcsillapítókat, de talán nem is, mert nem biztos, hogy az segít. Én is gondoltam a táppénzre, ja várj, lehet, hogy nem kéne, inkább dolgozzon. Végül azt hiszem, minden marad az alapoknál, vagy nem?",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "2",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Vírusfertőzés gyanúja",
+          "evidence": "Lehetséges vírusfertőzés említése a szédülés kapcsán.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "MRI vizsgálat",
+          "quantity_me": 1,
+          "evidence": "MRI vizsgálat szükségessége felmerült a szédülés miatt.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "ct_mri_pet",
+          "value": "2",
+          "evidence": "MRI vizsgálat szükségessége felmerült a szédülés miatt.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, Pepszi professzor vagyok. A mai alanyunk egy huszonöt éves lány, aki allergiás tünetekkel jött. Először azt hittem, hogy egy erős antihisztamin megoldja, de aztán rájöttem, hogy lehet, hogy élelmiszer eredetű allergia. Az első javaslatom probiotikumok volt, de aztán inkább ennél is elbizonytalanodtam. Végül, lehet, hogy mégis csak hagyjuk el a tejterméket az étrendjéből. És lehet, hogy bővítsük ki a vizsgálatokat valami komolyabbal, mondjuk, átfogó vérvizsgálat, vagy nem is, csak egy egyszerű bőrpróba elég lesz. Azt sem tudom, hogy a táppénz kérdése felmerülne-e, de talán mégsem, inkább maradjon az eredeti munkájánál.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Allergiás tünetek",
+          "evidence": "A mai alanyunk egy huszonöt éves lány, aki allergiás tünetekkel jött.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szép napot, Pepszi professzor jelentkezik. A mai különleges eset egy idős hölgy, aki furcsa módon gyakran elfelejti, hogy mit is akart mondani. Elsőre azt hittem, hogy talán komolyabb neurológiai probléma, de aztán inkább azt gondolom, lehet, hogy csak fáradt. A CT gondolata megfordult a fejemben, de aztán rájöttem, hogy lehet, mégsem ez a jó út. Talán inkább egy egyszerű alvásvizsgálat, vagy pszichológiai konzultáció is elég lehet. A táppénz kérdése is felmerült, de aztán azt hiszem, talán inkább ne, vagy mégis az lenne a megoldás? Még meg is kérdőjeleztem a saját javaslataimat, végül lehet, hogy csak pihenés kell.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Fáradtság",
+          "evidence": "A hölgy gyakran elfelejti, mit akart mondani, lehet, hogy csak fáradt.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot, Pepszi professzor beszél. Az esetünk egy macska, aki különös módon egyre gyakrabban cselekedne furcsán éjszakánként. Elsőre azt hittem, hogy talán epilepsziás, aztán arra jutottam, hogy esetleg csak unatkozik. A röntgen gondolata merült fel bennem, de aztán azt hiszem, lehet, nem is kell, inkább egy teljes körű vérvizsgálat. A gyógyszeres kezelés gondolata is megfordult a fejemben, de hát végül is talán csak egy új játékszer megoldhatná a problémát. Kicsivel később azonban megint az első gondolatomhoz tértem vissza... vagy nem is?",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Epilepszia gyanú",
+          "evidence": "Elsőre azt hittem, hogy talán epilepsziás.",
+          "confidence": 0.6
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Teljes körű vérvizsgálat",
+          "quantity_me": 1,
+          "evidence": "inkább egy teljes körű vérvizsgálat",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "1",
+          "evidence": "A röntgen gondolata merült fel bennem",
+          "confidence": 0.5
+        }
+      ],
+      "validation": {
+        "errors": [
+          {
+            "field": "kepalkoto_keres",
+            "code": "invalid_value",
+            "message": "A röntgen gondolata merült fel, de nem történt meg."
+          }
+        ],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szép napot, itt Pepszi Béla professzor jelentkezik. A mai alanyunk egy hatvan éves férfi, akinek szívével lehet probléma. A CT talán nem a legjobb módszer, de aztán mégis, lehet jobb lenne először egy EKG. Aztán megint megkérdőjeleztem magam, mivel lehet, hogy csak étrendi módosításokra lenne szükség és némi mozgás. Először úgy gondoltam, hogy pihenésre lenne szükség, de aztán úgy tűnik, mégis inkább aktív pihenésre. Felmerült a gyógyszerek kérdése is, de kezdetben egy doboz, aztán mégis inkább kétféle gyógyszer szükséges lehet. És a táppénz kérdése megint, hát azt hiszem, nem kéne dolgozni egyelőre vagy talán mégis jobb lenne a munkában maradni.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "1",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "2",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "szívprobléma",
+          "evidence": "A mai alanyunk egy hatvan éves férfi, akinek szívével lehet probléma.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "CT vizsgálat",
+          "quantity_me": 1,
+          "evidence": "A CT talán nem a legjobb módszer, de aztán mégis.",
+          "confidence": 0.6
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "2",
+          "evidence": "kezdetben egy doboz, aztán mégis inkább kétféle gyógyszer szükséges lehet.",
+          "confidence": 0.8
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "A CT talán nem a legjobb módszer, de aztán mégis.",
+          "confidence": 0.6
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot, Pepszi professzor vagyok. Az esetünk egy különös simogatásra érzékeny kutyus, aki bárányhimlőhöz hasonló kiütésekkel bír. Elsőre azt hittem, hogy allergiás reakció, de aztán inkább bőrfertőzésre gondoltam. Az antihisztamin gondolata jött fel először, de azt hiszem, nem, inkább valami fertőtlenítő kenegetés. És talán egy bőrgyógyászati szűrés kéne, de aztán megint, lehet, hogy egy belgyógyászati kivizsgálás jobb lenne. Tartalékként gondoltam egy védőoltásra, ami talán két adagos, de aztán végül is egy adagot javasoltam.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "bőrfertőzés",
+          "evidence": "bőrfertőzésre gondoltam",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "védőoltás",
+          "quantity_me": 1,
+          "evidence": "végül is egy adagot javasoltam",
+          "confidence": 0.7
+        }
+      ],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szép napot, Pepszi professzor vagyok. Ma egy tizenegy éves fiú, aki különös tüneteket mutat – nem tud elég sok vizet inni, de aztán azt hiszem, lehet, hogy a vízfogyasztásra való hajlam csak annak a jele, hogy egyszerűen szomjas. A CT vizsgálatot fontolgattam, de aztán rájöttem, hogy egyszerűen csak egy vérvizsgálat szükséges. Az első ötlet vitaminok szedése volt, de aztán azt javasoltam, hogy inkább változtassunk az étrendjén. A táppénz kérdése felmerült, de aztán úgy tűnik, lehet, inkább iskolába kéne mennie, meg aztán talán mégsem, maradjon otthon pihenni.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "egyszerűen csak egy vérvizsgálat szükséges",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot! Itt dr. Pepszi Béla, és az első betegünk Zsiga, a tacskó. Nos, hát az a helyzet, hogy a gazdája panaszkodik rá, hogy nagyon gyakran vakarózik mostanában, és... á, egy pillanat, közben hívnak... igen, szóval vakarózás. Elsőre gondoltam, hogy talán valami parazita, de aztán rájöttem, hogy lehet csak a mosószer váltástól van. Esetleg legyen valami allergiateszt? Bár lehet, hogy az se segít, inkább adjunk neki egy kis viszketés csillapítót... á, várjunk, most tudom, hogy inkább diétát kéne változtatni, talán szójamentes... ah, nem, mindegy, majd meglátjuk. És ja, kérem a következő kutyát.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Vakarózás, lehetséges allergia vagy parazita",
+          "evidence": "A gazdája panaszkodik rá, hogy nagyon gyakran vakarózik.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, Dr. Pepszi vagyok. A mai nap második páciensünk Kovács Bence úr. Nos, kedves Bence, úgy hallom, hogy gyakori fejfájásai vannak... vagy inkább gyomorpanaszok? Ó, bocsánat, összekevertem, fejfájásról van szó, ugye? Én azt hittem, hogy valami gyomorprobléma. Ajánlok egy hét pihenőt, igazából egy napra gondoltam, de inkább menjünk biztosra, és felírok valami könnyű fájdalomcsillapítót, ami nem is annyira erős... várjunk, az a gyógyszer túl erős lenne. Egyáltalán, amúgy inkább küldöm neurológiára. Vagy mégse, elég csak egy szemüveg.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "fejfájás",
+          "evidence": "A páciens gyakori fejfájásról számolt be.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "felírok valami könnyű fájdalomcsillapítót",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szép napot kívánok, Pepszi dr. vagyok, és a mai páciens egy macska, név szerint Cirmi. A gazdája szerint lehangolt és semmi kedve játszani, de én azt mondom, hogy talán csak unalmában van így... vagy inkább fáj valamelyik izülete. Nem is tudom, mit tegyünk, próbálkozzunk egy kis C-vitaminnal, ó, nem, az nem ide való... Talán inkább valami antidepresszáns? Nem, az se lesz jó. Én azt mondom, egy kis speciális macska-masszázs csodákra képes, vagy inkább foglalkozzon vele többet. Lehet, hogy csak az időjárás miatt kedvetlen, mondja meg neki, hogy várhatóan napos idő lesz.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot, Pepszi dr. itt újra, és most egy érdekes esetünk van: egy vadnyúl, neve nincs. Az egyik fülét valami megcsípte, de nem látjuk rendesen, lehet kullancs, de rendesen el van rejtve. Talán húzzuk ki magunk... jaj, várjunk, nem, ez így nem megy, inkább küldjük el a laborba tesztelni, bár lehet túlzás. Nézzük meg jobban, nincs ott, de mintha mégis lenne. Talán antibiotikumot kellene adni neki, de az is lehet, hogy csak hagyni kéne gyógyulni magától. Rendben, csak várjunk és figyeljük. De lehet, hogy nézzük meg ultrahanggal, vagy radiológiai kezelés? Ah, nem, ebbe belekeveredtem.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Itt dr. Pepszi, üdvözlök mindenkit. A mai páciensünk Nagy Marianna, akinél a vérnyomás... vagyis nem is, a vérkép mutatott eltéréseket. Vagyis inkább az ultrahang? Bocsánat, teljesen összezavarodtam, szóval az ultrahang kimutatott valamit, de nem is tudom, hogy az fontos-e. A veséknél láttunk valamit... vagy máshol? Lehet jobb lenne egy CT-t csinálni, bár eredetileg röntgenre gondoltam. Talán hagyjuk egyelőre, inkább fájdalommentes diétát javasolok. Esetleg a kardiológusnak kéne továbbküldeni, de végülis jó lesz a nefrológia is. Igazából nem is tudom már, de valamit végül is csinálnunk kell.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "1",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "7",
+        "ct_mri_pet": "1",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "tovabbkuldes",
+          "value": "1",
+          "evidence": "Esetleg a kardiológusnak kéne továbbküldeni, de végülis jó lesz a nefrológia is.",
+          "confidence": 0.8
+        },
+        {
+          "field": "kepalkoto_keres",
+          "value": "7",
+          "evidence": "az ultrahang kimutatott valamit",
+          "confidence": 0.7
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "Lehet jobb lenne egy CT-t csinálni",
+          "confidence": 0.6
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szép napot! Dr. Pepszi Béla vagyok, és most itt van velünk Csipesz, a tengerimalac. Az a gond, hogy valami furcsán csámcsog, vagy inkább hogy nem eszik rendesen. Gondoltam, hogy valami fogak, de igazából a hasa is lehet. Adhatnánk neki valami probiotikumot, de várjunk, inkább csak... hagyjuk el, inkább nem, az semmi értelme. Talán táplálkozási tanácsadást kéne kérni. Vagy lehet, hogy jobb, ha csak simán hagyjuk, hogy magától helyrejön. Mégiscsak ja, az ételét kell módosítani, de azt sem tudom, milyen irányban. Talán próbálja meg a gazda a zöldségeket, vagy ne is, mindegy.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, dr. Pepszi vagyok. A mai páciensük Németh János, és a hipochondriája... vagyis nem, az asztmája az ami, ó, bocsánat, rosszul emlékszem, tényleg hipochondria... vagy lehet mégis az asztma a tényleges probléma. Felírjak valami inhalátort? Inkább nem, lehet nincs rá szükség. Rendeljek légzésfunkció vizsgálatot? Bár talán az is felesleges. Lehet csak beszélni kellene egy szakemberrel, de inkább kezeljük így, és aztán meglátjuk. Végül is, ha nem asztma, akkor így is lehet, hogy megnyugszik. Vagy talán kérjünk egy második véleményt, vagy inkább ne is, hagyjuk.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "F45.3",
+          "text_label": "Hipochondria",
+          "evidence": "A páciens hipochondriája említve lett.",
+          "confidence": 0.9
+        },
+        {
+          "bno10": "J45",
+          "text_label": "Asztma",
+          "evidence": "Az asztma említése a leiratban.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Hello, Pepszi Béla doktor vagyok, és a mai alanyunk egy papagáj, nevén Riko. Állítólag elvesztette a hangját, de igazából nem, csak ritkábban beszél. Lehet, hogy csak kimerült, vagy talán valami vírus? Nem is vagyok benne biztos... először antibiotikumra gondoltam, de aztán rájöttem az esetleges toxikus hatásra. Inkább hagyjuk, nézzük meg a torkát, vagy adjunk neki valami vitamint? Talán egyszerűen csak pihennie kell. De gondoljunk inkább fizioterápiára? Vagy nem, az embereknek való, bár ki tudja, kérjük ki egy madárspecialista véleményét, vagy ne.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Dr. Pepszi Béla vagyok, fogadják szeretettel. Most egy érdekes eset van: egy teknős, Elvira, nem mozog rendesen. Lehet, hogy a páncélja... vagy nem, talán az étel a ludas. Gondoltam röntgenre, de inkább... valami más. Várjunk, az is lehet, hogy szimplán csak hibernál. Talán hőterápiát kéne alkalmazni. Vagyis nem, inkább növeljük a fényt és figyeljük. Lehet egy vitaminkészlet is sokat segít, vagy megvárjuk, hátha magától helyrejön. Nem igazán döntöttem el, hogy mi is kéne, de ha bármi változik, hívjanak fel.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot! Pepszi Béla professzor vagyok, és a mai utolsó betegünk Csilla, akinél a vércukorszint... vagyis a vérnyomás az, ami eltérés mutatott. Egészen biztos voltam, hogy vércukor, de inkább kiderült, hogy a nyomás. Adok neki valamit, vagy lehet jobb, ha mégse? Talán diétát változtatnánk? Inkább ne, bár lehet. Küldjük el diabetológushoz, vagy kardiológushoz... nem is tudom. Megpróbálhatnánk életmód váltást is, de lehet, hogy az sem megy neki. Végül is, biztos ami biztos, egy kontroll nem árthat. Talán kérjük ki egy orvos tanácsát, vagy ne is, úgyis normális lesz hamarosan.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Vérnyomás eltérés",
+          "evidence": "A vérnyomás az, ami eltérés mutatott.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot kívánok, itt Pepszi Béla professzor beszél. Ma egy különös esetet szeretnék megosztani Önökkel. A páciens egy hároméves brit rövidszőrű macska, aki... várjunk csak, négyéves, bocsánat, négyéves. Tudják, a gazdája arról számolt be, hogy a cicus furcsán lélegzik, de amikor megvizsgáltam, nem találtam semmilyen légzési nehézséget. Úgy döntöttem, hogy egy CT-vizsgálatot rendelünk el, de aztán rájöttem, hogy nincs is szükség rá, így inkább csak megfigyelés alá helyezzük. A vérképe teljesen normális, pedig én esküdni mertem volna rá, hogy lesz valami, de nem lett. Úgy érzem, talán mégis adjunk neki valami antibiotikumot, de azt hiszem, mégsem kell. A gazdinak azt tanácsoltam, hogy jöjjön vissza egy hét múlva, vagy talán két hét múlva, attól függ, hogy érzi majd a cicus magát. Jaj, elfelejtettem, a táppénzről még nem is beszéltünk, de ez egy macska, úgyhogy ez nem is releváns. Na, akkor ennyit erről a vizitről, és majd meglátjuk, mi lesz.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szia, Pepszi Béla vagyok, van egy kedves páciensünk, egy ötven éves férfi, nevezzük őt Jánosnak. János panaszkodott állandó gyomorfájásról, amitől nem tud aludni. Először csak egy sima gyomorvizsgálatot javasoltam, de aztán rájöttem, hogy talán egy endoszkópia hasznosabb lenne. Az az igazság, hogy a laboreredmények kicsit zavarosak, mert az egyik pillanatban magasak voltak az értékek, a másik pillanatban meg már normálisak. Felírtam neki egy protonpumpa-gátlót, de aztán visszavontam, mert lehet, hogy jobb, ha valami enyhébbel kezdjük. Azt mondtam neki, hogy igen, menjen táppénzre, de aztán meg gondoltam, hogy nem lenne jó ötlet, mert így nem lesz motivációja hamarosan meggyógyulni. Na mindegy, majd meglátjuk, mi történik. Következő találkozónk jövő héten lesz, talán addigra kiderül valami.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Állandó gyomorfájás",
+          "evidence": "János panaszkodott állandó gyomorfájásról, amitől nem tud aludni.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Endoszkópia javaslat",
+          "quantity_me": 1,
+          "evidence": "talán egy endoszkópia hasznosabb lenne",
+          "confidence": 0.7
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Felírtam neki egy protonpumpa-gátlót",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözlöm, Pepszi Béla vagyok. A mai nap különösen érdekes volt, mert egy pávát hoztak be. Igen, jól hallották, egy pávát! A gazdája szerint a madár nem eszik, és kiesik a tolla, de amikor megvizsgáltam, azt gondoltam, talán nem is olyan nagy a baj. Eredetileg vérvizsgálatot akartam, de aztán rájöttem, hogy csak stressz az oka. Mégis, csak biztos ami biztos, felírtam neki egy vitaminkúrát, de visszavontam, mert eszembe jutott, hogy lehet, mégis természetes úton kéne megpróbálni javítani a helyzeten. A gazda nagyon bizonytalan volt, hogy mi is legyen, ezért azt javasoltam, jöjjön vissza egy hónap múlva, vagy két héten belül, de igazából bármikor, amikor úgy érzi, hogy rosszabbodik a helyzet. És persze, a páva nem mehet táppénzre, tehát ezzel nem kell foglalkoznunk. Reméljük, minden rendben lesz vele.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "2",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Stressz",
+          "evidence": "A madár nem eszik, és kiesik a tolla, de talán nem is olyan nagy a baj.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "2",
+          "evidence": "javasoltam, jöjjön vissza egy hónap múlva, vagy két héten belül",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, Pepszi Béla, van itt valami furcsa eset. Egy nyolcvankét éves hölgy került hozzám, nevezzük Erzsébetnek. Fájdalomra panaszkodott a lábában, és először azt hittem, törés lehet, de aztán a röntgen kimutatta, hogy nincs semmilyen törés. Azzal kezdtem, hogy ajánlottam neki rendszeres fizioterápiát, aztán rájöttem, hogy talán pihenés jobb ötlet. Mégis, csak felírtam egy enyhe fájdalomcsillapítót, de aztán visszavontam, mert lehet, hogy elég, ha csak krumpli pakolást alkalmaz otthon. Mondtam neki, hogy ne menjen táppénzre, de aztán meggondoltam magam, hogy talán mégis jobb, ha kicsit pihen. Vissza kell jönnie mondjuk két hét múlva, vagy amikor úgy érzi, hogy romlik az állapota. Hát, ez egy ilyen különös nap volt, reméljük, jobban lesz.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "2",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "2",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "1",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Lábfájdalom",
+          "evidence": "Fájdalomra panaszkodott a lábában.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Röntgen vizsgálat",
+          "quantity_me": 1,
+          "evidence": "röntgen kimutatta, hogy nincs semmilyen törés",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "2",
+          "evidence": "Vissza kell jönnie mondjuk két hét múlva",
+          "confidence": 0.8
+        },
+        {
+          "field": "kepalkoto_keres",
+          "value": "2",
+          "evidence": "röntgen kimutatta, hogy nincs semmilyen törés",
+          "confidence": 0.9
+        },
+        {
+          "field": "fizioterapia",
+          "value": "1",
+          "evidence": "ajánlottam neki rendszeres fizioterápiát",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdv, itt Pepszi Béla. Képzeljék csak el, egy kutyust hoztak be ma, egy bernáthegyit, aki súlyos fülgyulladással küzdött. Először arra gondoltam, hogy műtétre lesz szükség, de aztán kiderült, hogy elég egy alapos tisztítás. A gazdája kicsit aggódott, így javasoltam, hogy minden nap törölje át a kutyus fülét, de aztán rájöttem, hogy inkább kétnaponta lenne jobb. Antibiotikumot írtam fel, de aztán mondtam, hogy ne adják neki, mert valószínűleg a gyulladás magától is elmúlik. Ami a táppénzt illeti, hát ugye a kutyáknál ez nem téma. Azt mondtam a gazdinak, hogy egy hónap múlva nézzük meg újra, vagy amikor úgy látja, hogy gond van. Remélem, minden rendben lesz vele.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "0",
+          "evidence": "Antibiotikumot írtam fel, de aztán mondtam, hogy ne adják neki.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Jó napot, itt Pepszi Béla. Ma egy különleges esetünk volt, egy kismama, nevezzük őt Annának, aki súlyos fejfájásokkal keresett fel. Először azonnal CT-t akartam rendelni, de aztán rájöttem, hogy egy egyszerű vérvizsgálat is elég lenne. Az eredmények vegyesek voltak, de végül is semmi kórosat nem találtunk. Enyhe fájdalomcsillapítót javasoltam neki, de aztán visszavontam, mert lehet, hogy inkább próbálkozni kéne természetes gyógymódokkal. Táppénzre küldtem volna, de aztán gondoltam, hogy mégis csak jobb, ha nem megy, mert így gyorsabban visszatérhet a megszokott rutinjába. Két hét múlva kontrollra hívtam vissza, de ha addig nem érzi jól magát, akkor bármikor jöhet. Na, kíváncsi leszek, hogy alakul ez.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "2",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "A",
+        "labor_keres": "1",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "1",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Súlyos fejfájás",
+          "evidence": "Anna súlyos fejfájásokkal keresett fel.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Vérvizsgálat",
+          "quantity_me": 1,
+          "evidence": "egyszerű vérvizsgálat is elég lenne",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "2",
+          "evidence": "két hét múlva kontrollra hívtam vissza",
+          "confidence": 0.9
+        },
+        {
+          "field": "beavatkozas_jellege",
+          "value": "A",
+          "evidence": "azonnal CT-t akartam rendelni",
+          "confidence": 0.8
+        },
+        {
+          "field": "labor_keres",
+          "value": "1",
+          "evidence": "egyszerű vérvizsgálat is elég lenne",
+          "confidence": 0.9
+        },
+        {
+          "field": "ct_mri_pet",
+          "value": "1",
+          "evidence": "azonnal CT-t akartam rendelni",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, itt Pepszi Béla, és ma egy különös esetről csiripelek, szó szerint! Egy papagáj jött látogatóba, akinek nem akarok hinni a zokogásán, de a gazdája állítja, hogy tényleg szomorú. Először pszichológushoz akartam küldeni, de aztán rájöttem, hogy talán csak egy új játék vagy valami pozitív figyelem elég lesz. A gazda azt mondta, hogy a madár nem érzi jól magát otthon, és én igazából nem tudtam eldönteni, hogy mit is kéne tenni. Végül felírtam neki egy kis B-vitamin kúrát, de aztán visszavontam, mert úgy gondoltam, lehet, hogy inkább csak változtassák meg a ketrec helyét. Két hét múlva meglátogatnak újra, de amíg nem súlyosbodik a helyzet, nem kell aggódni. A papagáj sem mehet táppénzre, így ez nem bonyolítja a dolgokat.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Felírtam neki egy kis B-vitamin kúrát, de aztán visszavontam.",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Szia, Pepszi Béla itt, egy újabb lenyűgöző esetet hoztam. Egy hétéves fiút hoztak be, nevezzük őt Pistinek, aki folyamatos fülzúgásról panaszkodik. Először azt hittem, hogy középfülgyulladás lehet, de aztán rájöttem, hogy talán inkább zajártalom. A fülvizsgálat semmi különöset nem mutatott, bár én azt hittem, hogy biztos lesz valami. Mégis, adtam neki egy receptet enyhe fájdalomcsillapítóra, de aztán mondtam, hogy ne váltsák ki, mert valószínűleg inkább csak pihenjen egy kicsit. Gondolkodtam rajta, hogy javasoljak táppénzt, de aztán úgy döntöttem, hogy inkább menjen iskolába, ha jól érzi magát. Egy hónap múlva kontroll, ha addig nincs változás. Igyekszünk kitalálni, mi legyen a helyes út.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "fülzúgás",
+          "evidence": "A fiú folyamatos fülzúgásról panaszkodik.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Adtam neki egy receptet enyhe fájdalomcsillapítóra.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Üdvözöllek, Pepszi Béla vagyok, ma egy jószívű ló került hozzám, nevezzük őt Szilajnak. A gazdája szerint a ló nem eszik eleget, és kicsit le van fogyva. Először azt hittem, hogy fogászati probléma lehet, de aztán lehet, hogy inkább stressz. Úgy döntöttem, hogy elég lesz egy alapos étrendváltoztatás, de aztán mégis megnéztem a fogait, és hát semmi különöset nem találtam. Felírtam neki egy vitaminkúrát, de aztán mondtam a gazdának, hogy talán inkább csak több pihenés kéne. Szóba került a táppénz, de hát egy ló esetében ez nem játszik. Azt javasoltam, hogy jöjjön vissza két hét múlva, vagy ha bármi romlik, akkor hamarabb. Remélem minden rendben lesz vele, és újra a régi lesz.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "2",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Stressz",
+          "evidence": "A ló nem eszik eleget, és kicsit le van fogyva, lehet, hogy inkább stressz.",
+          "confidence": 0.7
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Felírtam neki egy vitaminkúrát.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Helló, itt Pepszi Béla, ma egy különös eset került hozzám. Egy huszonkét éves fiatalember, nevezzük őt Norbertnek, aki állandó hőemelkedésről panaszkodott. Első gondolatom az volt, hogy talán valamilyen bakteriális fertőzés lehet, de aztán a tesztek kimutatták, hogy nincs semmi ilyesmi. Végül csak annyit mondtam neki, hogy igyon sok folyadékot és pihenjen. Felírtam neki egy lázcsillapítót, amit aztán visszavontam, mert gondoltam, hogy jobb, ha csak hagyjuk, hogy a szervezete maga küzdje le. Szóba került a táppénz, de végül úgy döntöttem, hogy inkább ne menjen, csak akkor, ha rosszabbodik az állapota. Két hét múlva jön vissza kontrollra, vagy ha addig bármi történik, akkor korábban. Reméljük, hamar jobban lesz.",
+    "extracted": {
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "2",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Állandó hőemelkedés",
+          "evidence": "Norbert állandó hőemelkedésről panaszkodott.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "ellatas_tipusa",
+          "value": "2",
+          "evidence": "Két hét múlva jön vissza kontrollra.",
+          "confidence": 0.9
+        },
+        {
+          "field": "veny_gyogyszer",
+          "value": "0",
+          "evidence": "Felírtam neki egy lázcsillapítót, amit aztán visszavontam.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  }
+]

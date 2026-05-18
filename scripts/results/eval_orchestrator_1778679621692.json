@@ -1,0 +1,92 @@
+[
+  {
+    "transcript": "Páciens neve: Kovács István, 45 éves férfi. A mai vizsgálat során panaszkodik tartósan fennálló hátfájásra. Röntgen vizsgálatot javasolok, bár ez korábban már történt és nem mutatott eltérést. Felírok neki ibuprofent, bár bevallotta, hogy korábban már érzett enyhe allergiás reakciót a gyógyszerre.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to process the transcript and provide any extracted data, which is a critical error. Additionally, it did not catch the contradiction of prescribing ibuprofen despite the patient's previous allergic reaction.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Páciens neve: Szabó Júlia, 28 éves nő. Magas láz és torokfájdalom miatt érkezett. Korábban kapott antibiotikumot, de állapota tovább romlott. Erős torokgyulladást diagnosztizálok és újabb antibiotikum kúrát írok fel, de megkérdőjelezem, hogy vajon vírus vagy baktérium okozza-e pontosan a tüneteket.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the relevant medical information from the transcript. The final processed data is null, indicating no data was captured. The transcript contains important details about the patient's condition, previous treatment, and the doctor's current diagnosis and treatment plan, none of which were reflected in the processed data. Additionally, the system did not capture the doctor's uncertainty about the cause of the symptoms, which is a critical aspect of the transcript.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Páciens neve: Tóth Ádám, 60 éves férfi. A beteg állandó szédülésre panaszkodik és megfigyeltem a vérnyomása alacsony. Új vérnyomáscsökkentő gyógyszert írok fel, bár az alacsony vérnyomás miatt logikusabb lenne ennek elkerülése.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the data correctly, as indicated by the 'null' output. It also missed the contradiction in prescribing a blood pressure medication despite the patient having low blood pressure.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Páciens neve: Kiss Éva, 35 éves nő. Allergiás reakció miatt jött be, bőrpír és viszketés jellemzi. Korábban azt mondta, hogy allergiás a penicillinre, de úgy emlékszem, múltkor azt a gyógyszert is sikeresen elviselte.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the relevant information from the transcript. The final processed data is null, indicating no data was captured. Additionally, the system did not identify the potential contradiction regarding the patient's penicillin allergy.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Páciens neve: Nagy Zoltán, 50 éves férfi. Égő érzést tapasztal vizelés közben. Diagnózis: valószínű húgyúti fertőzés. Antibiotikumot írok fel neki, amelyre korábban allergiás reakciója volt, de azóta nem jelentkeztek tünetek.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to process the transcript correctly, as indicated by the 'Final Processed Data: null'. It did not capture the critical information about the patient's condition and the doctor's intent to prescribe an antibiotic despite a previous allergic reaction. This is a significant oversight, especially given the potential risk to the patient. Additionally, the system did not identify the contradiction in prescribing an antibiotic that previously caused an allergic reaction.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Páciens neve: Horváth Mária, 65 éves nő. Szívritmuszavarral érkezett. A kórelőzményében szerepel ugyanilyen panasz, de az akkor alkalmazott kezelést most kontraindikáltnak találom, ezért más típusú gyógyszert fogok felírni.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process any relevant data from the transcript, as indicated by the 'null' final processed data. The transcript contains important information about the patient's condition and treatment plan, which was not captured. There is no evidence of contradictions being identified or addressed.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Páciens neve: Balogh Péter, 30 éves férfi. Krónikus köhögés miatt keresett fel. Előzetesen asztmát diagnosztizáltak nála, de a tünetei sokkal inkább refluxra utalnak így más kezelést javasolok.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the relevant information from the transcript. The final processed data is null, indicating that no data was captured or interpreted. The transcript clearly mentions a change in diagnosis from asthma to reflux, which is crucial information that should have been extracted. There are no formatting errors, but the lack of data extraction is a significant issue.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Páciens neve: Farkas Anna, 55 éves nő. Cukorbetegséggel diagnosztizálták korábban, de a jelenlegi tünetei és laborteredményei alapján ez nem állja meg teljesen a helyét. Újabb vizsgálatokat rendelek el.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the key information from the transcript. The final processed data is null, which indicates that no data was captured. The transcript contains important information about the patient's name, age, gender, previous diagnosis, current symptoms, lab results, and the doctor's decision to order further tests. None of this information was reflected in the final processed data.",
+      "contradictions_found": true
+    }
+  },
+  {
+    "transcript": "Páciens neve: Molnár Tamás, 40 éves férfi. Krónikus fejfájásra panaszkodik. Az eddigi MRI vizsgálatok negatívak voltak, mégis most jelentős változást tapasztal. Újabb neurológiai vizsgálatot javasolok.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the relevant information from the transcript. The final processed data is null, which indicates that no data was captured or interpreted. The doctor's intent to suggest a new neurological examination was not reflected in the processed data. There are no formatting errors, but the lack of data extraction is a significant issue.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Páciens neve: Varga Katalin, 48 éves nő. Légszomj és köhögés miatt jelentkezett. A vizsgálatok alapján COPD-t valószínűsítek, bár a tünetek inkább szív eredetű problémára utalnak. Rövid távú légzéskönnyítő kezelést kap.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to process the transcript and provide any extracted data, as indicated by the 'null' output. This suggests a complete failure in capturing the doctor's intent or any relevant medical information. Additionally, the system did not identify the potential contradiction in the diagnosis, where COPD is suspected but symptoms suggest a cardiac issue. There are no formatting errors since no data was processed.",
+      "contradictions_found": false
+    }
+  }
+]

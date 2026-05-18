@@ -1,0 +1,92 @@
+[
+  {
+    "transcript": "Tisztelt Kardiológiai Szakrendelés! A páciens, 63 éves férfi, vérnyomásproblémák miatti kontrollvizsgálaton jelentkezett. Rendszeresen szedett gyógyszerei között van amlodipin, amire azonban azt állította, hogy korábban allergiás reakciót váltott ki nála. Mégis felírtuk neki, mivel a vérnyomása 160/95 Hgmm volt, és szükség volt az amlodipinre.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to process the transcript correctly as the Final Processed Data is null, indicating no data extraction. Additionally, it missed the contradiction where the patient was prescribed a medication they previously had an allergic reaction to.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Bőrgyógyászati konzultáció. A páciens, 45 éves nő, bőrkiütésekkel érkezett. Elmondása szerint nem áll fenn allergia. Az allergia tesztek később kiderítették, hogy penicillinérzékeny, bár korábban ezt nem említette. Ennek ellenére antibiotikumot kapott egy másik összetevővel, és a kiütések enyhültek.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the key information from the transcript, as indicated by the 'Final Processed Data: null'. It missed the critical contradiction regarding the patient's penicillin allergy, which was initially unknown but later discovered. This is a significant oversight. Additionally, there is no evidence of any formatting errors, but the lack of data extraction is a major issue.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Neurológiai vizsgálat során a 70 éves női páciens az utóbbi hónapokban gyakori fejfájásra panaszkodott, amit stressznek tulajdonítottunk. Az MR eredménye daganatot mutatott ki, ami felülírta az eredeti stressz-diagnózist.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the critical information from the transcript, as indicated by the 'null' final processed data. The transcript contains important medical findings, such as the presence of a tumor, which were not captured. Additionally, the system did not identify the contradiction between the initial stress diagnosis and the MRI results showing a tumor.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Ortopédiai konzultáció. A 50 éves férfi páciens a bal térdízületi fájdalmak miatt jött, amire korábban már kapott fizikai terápiát. A diagnózis akut ízületi gyulladás lett. Javasoltunk neki erősebb fájdalomcsillapítót, majd később visszavontuk, mert kiderült, hogy érzékeny rá.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract any data from the transcript, as indicated by the 'null' output. The transcript contains important information about the patient's condition, treatment history, and medication sensitivity, none of which were captured. There is no evidence of contradictions being identified or addressed.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dietetikai tanácsadás: A 30 éves női páciens túlsúlyra panaszkodik. A korábbi diétás naplója alapján vegetáriánus, de az új étrendi terv magában foglalt húsfogyasztást, amit a páciens nem fogadott el, így vegetáriánus opciókkal módosítottuk.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to process the transcript as the final processed data is null, indicating no extraction of relevant information. The system did not capture the dietary preferences and adjustments made for the patient. There are no formatting errors, but the lack of data extraction is a significant issue.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Pszichiátriai konzultáció. A 40 éves férfi pácienst szorongásos zavar miatt kezeljük. Gyógyszeres kezelése közben egy másik pszichiáter depressziót is diagnosztizált, ami miatt módosítottuk a terápiát. Később újraértékelve a szorongásos diagnózis volt helytálló.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract any data from the transcript, as indicated by the 'Final Processed Data: null'. This suggests that the system did not capture the key information about the patient's diagnosis and treatment changes. There is no indication of contradictions being identified or addressed.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Endokrinológiai vizsgálat. A 55 éves női páciens pajzsmirigy alulműködés miatt érkezett. A reggeli letargia tünetei alapján alulbecsültük a hormon szintjét, a következő kontrollon azonban az értékek a normális határok között voltak.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract any data from the transcript, as indicated by the 'null' final processed data. The transcript contains specific information about a patient's condition and test results, which should have been captured. There is no indication of contradictions in the transcript, but the lack of data extraction is a significant issue.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Fogászati ellenőrzés során a 25 éves férfi pácienstől tudtuk meg, hogy három fogát fájlalja. Röntgen alapján kiderült, hogy csak kettő igényel kezelést, de mégis mindhárom fogat kezeltük preventív célból, ami feleslegessé vált.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the relevant information from the transcript. The final processed data is null, indicating no data was captured, despite the transcript containing specific details about the patient's dental issues and treatment. Additionally, the system did not identify the contradiction in the treatment approach.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Gasztroenterológiai vizsgálat. 60 éves nő panasza puffadás és gyomorégés. A lisztérzékenység tesztje negatív, de mégis gluténmentes diétát javasoltunk, ami javított az állapotán, annak ellenére, hogy nem egyértelmű a diagnózis.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process any data from the transcript, as indicated by the 'Final Processed Data: null'. This suggests a complete failure in capturing the doctor's intent or any relevant information from the transcript.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Reumatológiai konzultáció. A 43 éves férfi ízületi fájdalomra panaszkodott, amit korábban ízületi kopásnak diagnosztizáltunk. Az MR vizsgálat eloszlatta ezt a diagnózist, a gyulladásos folyamat miatti kezelés szükséges volt.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract any relevant data from the transcript, as indicated by the 'null' output. The transcript contains important information about a change in diagnosis and treatment requirements, which was not captured. There are no formatting errors, but the lack of data extraction is a significant issue.",
+      "contradictions_found": false
+    }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "transcript": "Dr. Kovács Péter vagyok, kardiológia. Tóth Lajos a mai napon kontrollvizsgálatra érkezett. Vérnyomása 140/90, ami magasnak számít, de a beteg nem szed rá gyógyszert jelenleg. A szívverése szabályos, de kissé szapora, ezért javaslom a Bisoprololt. A beteg jelezte, hogy korábban allergiás reakciója volt erre, így mégis inkább életmódbeli változtatásokat tanácsolnék.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the key information from the transcript. The final processed data is null, indicating no data was captured. The doctor's intent to recommend lifestyle changes due to an allergy to Bisoprolol was not reflected in the output.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Szabó Éva, bőrgyógyászat. Páciensem, Németh Zita 34 éves nő, krónikus bőrkiütésekkel került hozzám. Elmondása szerint 5 hónapja kezdődtek a tünetek, és azóta súlyosbodtak. Mivel korábban nem reagált a szteroidokra, javaslom a Tacrolimus kenőcs kipróbálását. Ugyanakkor ő korábban elmondta, hogy Tacrolimusra már próbálta, hatástalan volt.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to process the transcript correctly, as it did not capture the contradiction regarding the use of Tacrolimus. The final processed data is null, indicating no extraction of relevant information.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Farkas László, ortopédia. Horváth András, 45 éves férfi páciens térdfájdalommal érkezett a rendelésre. A röntgenvizsgálat alapján artrózis látható. Gyógytornát és nem szteroid gyulladáscsökkentőt javaslok, azonban mivel aszpirinre allergiás, figyelmeztetem az ibuprofen potenciális keresztreakciójára.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 0,
+      "reason": "The final processed data is null, indicating that the system failed to extract any information from the transcript. This means it did not capture the doctor's recommendations or the patient's condition, which are crucial for understanding the medical advice given. There are no contradictions found because no data was processed.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Kovács Attila, neurológia. Kiss Éva 59 éves női páciens, migrénes panaszokkal. A legutóbbi találkozónk óta a migrén gyakorisága nőtt, ezért triptán készítmények szedését javasoltam. Habár az előző consultnál azt mondtam, hogy a triptán nem javasolt az ő korában, most az orvosával való konzultáció után változtattam az ajánláson.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the key information from the transcript. The final processed data is null, indicating no data was captured. Additionally, the system did not identify the contradiction in the doctor's recommendation regarding triptán use.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Tamás Judit, fül-orr-gégészet. Nagy Péter, 22 éves férfi, krónikus orrdugulás miatt. Az orrüreg vizsgálata során orrsövényferdülés látható. Műtétet javaslok, de előtte kortikoszteroid orrsprayt próbálnánk meg. Azonban a páciens már korábban is használt ilyet, hatástalannak bizonyult.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the relevant information from the transcript. The final processed data is null, which indicates that no data was captured. The transcript clearly outlines a medical recommendation and a past treatment history, which should have been extracted. Additionally, there is a contradiction in the treatment plan that was not identified: the doctor suggests trying a corticosteroid nasal spray, but the patient has already found it ineffective in the past.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Varga Zoltán, endokrinológia. Fekete Márta 50 éves nő, pajzsmirigy alulműködés kezelésére L-thyroxint szed. A vérvizsgálat alapján a TSH szintje kórosan alacsony, így a gyógyszer adagját csökkentjük. Azonban a beteg azt mondta, hogy az alacsony adagolás mellett is súlygyarapodást tapasztal, ezért javaslom a szakorvosi konzultációt.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the relevant information from the transcript. The final processed data is null, which indicates that no data was captured. The transcript contains important details about the patient's condition, medication, and the doctor's recommendation for a specialist consultation, none of which were reflected in the final data. There are no contradictions in the transcript itself, but the lack of data extraction is a significant issue.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Nagy Ádám, gasztroenterológia. Szűcs János, 40 éves férfi, gyomorégés és reflux tüneteivel jelentkezett. Omeprazolt javasoltam, amit már korábban is szedett, de nem volt hatékony. Javaslom más protonpumpa-gátló kipróbálását, habár a beteg szerint a diétás változtatások már hoztak javulást.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the relevant data from the transcript. The final processed data is null, indicating no information was captured. The doctor's intent to try a different proton pump inhibitor was not recorded, and the patient's feedback on dietary changes was also missed.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Tóth Emese, reumatológia. Balogh Zsuzsa, 60 éves nő, krónikus ízületi fájdalmak. Korábban Meloxicamot szedett, de most a növekvő gyomorpanaszok miatt új gyógyszer beállítására van szükség. Etoricoxibet írtam fel, de a páciens már korábbi tapasztalatok alapján nem szedne új NSAID-t.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the key information from the transcript. The final processed data is null, indicating no data was captured. The patient's reluctance to take new NSAIDs was not addressed, which is a critical contradiction in the doctor's intent.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Lakatos Viktor, pszichiátria. Kelemen Júlia, 29 éves nő szorongásos tünetekkel érkezett. Korábban szedett SSRI-t, ami nem használt. Javaslom a kognitív viselkedésterápiát, de közben támogatná a gyógyszeres kezelés folytatását, amivel nem ért egyet.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the key information from the transcript. The final processed data is null, indicating no data was captured. The doctor's intent to recommend cognitive behavioral therapy and the patient's disagreement with continuing medication were not captured. There is a contradiction in the patient's treatment preferences that was not identified.",
+      "contradictions_found": false
+    }
+  },
+  {
+    "transcript": "Dr. Horváth Gábor, pulmonológia. Molnár György, 55 éves férfi, hörghurut panaszokkal. A tünetek alapján bakteriális fertőzésre gyanakszom, ezért antibiotikumot írtam fel. Ugyanakkor a páciens elmondása szerint korábban nem reagált jól az ilyen kezelésekre, ezért kértem a tüdőröntgen ismétlését.",
+    "finalOutput": null,
+    "evalResult": {
+      "score": 20,
+      "reason": "The system failed to extract and process the key information from the transcript. The final processed data is null, indicating no data was captured. The doctor's intent to prescribe antibiotics and request a repeat chest X-ray was not reflected in the processed data.",
+      "contradictions_found": false
+    }
+  }
+]

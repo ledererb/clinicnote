@@ -1,0 +1,1654 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+
+Color Theme: Galaxy Purple & Sparkling Light Blue
+- Primary: Deep galaxy purple
+- Accent: Sparkling cyan/light blue
+- Background: Deep space dark with purple tints
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 195 65% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 195 65% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 195 65% 15%;
+
+    --primary: 195 65% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 170 95% 85%;
+    --secondary-foreground: 195 65% 15%;
+
+    --muted: 195 20% 90%;
+    --muted-foreground: 195 30% 40%;
+
+    --accent: 175 100% 40%;
+    --accent-foreground: 195 65% 15%;
+
+    --destructive: 0 68% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 25 95% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 195 30% 80%;
+    --input: 195 30% 80%;
+    --ring: 175 100% 45%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 195 65% 15%;
+    --sidebar-primary: 175 100% 45%;
+    --sidebar-primary-foreground: 195 65% 15%;
+    --sidebar-accent: 170 95% 85%;
+    --sidebar-accent-foreground: 195 65% 15%;
+    --sidebar-border: 195 30% 80%;
+    --sidebar-ring: 175 100% 45%;
+
+    --galaxy-purple: 195 65% 15%;
+    --galaxy-purple-dark: 195 80% 10%;
+    --galaxy-purple-light: 195 40% 30%;
+    --sparkle-blue: 175 100% 45%;
+    --sparkle-blue-light: 170 95% 85%;
+    --sparkle-blue-dark: 175 100% 30%;
+    --nebula-pink: 170 90% 70%;
+    --star-white: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 195 65% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 195 65% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 195 65% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 175 100% 45%;
+    --primary-foreground: 195 65% 10%;
+
+    --secondary: 195 65% 15%;
+    --secondary-foreground: 195 10% 85%;
+
+    --muted: 195 65% 15%;
+    --muted-foreground: 195 15% 55%;
+
+    --accent: 175 85% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 195 65% 18%;
+    --input: 195 65% 18%;
+    --ring: 175 100% 45%;
+
+    --warning: 25 100% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --sidebar-background: 195 65% 8%;
+    --sidebar-foreground: 195 10% 80%;
+    --sidebar-primary: 175 100% 45%;
+    --sidebar-primary-foreground: 195 65% 10%;
+    --sidebar-accent: 195 65% 20%;
+    --sidebar-accent-foreground: 175 100% 70%;
+    --sidebar-border: 195 65% 15%;
+    --sidebar-ring: 175 100% 45%;
+
+    --galaxy-purple: 175 100% 45%;
+    --galaxy-purple-dark: 175 100% 30%;
+    --galaxy-purple-light: 170 95% 85%;
+    --sparkle-blue: 175 100% 45%;
+    --sparkle-blue-light: 170 95% 85%;
+    --sparkle-blue-dark: 175 100% 30%;
+    --nebula-pink: 170 90% 70%;
+    --star-white: 60 20% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Light mode: silver (top) → lavender → light purple (bottom) */
+  :root body { background: linear-gradient(to top right, hsl(185 80% 90%) 0%, hsl(0 0% 100%) 70%) !important; background-attachment: fixed !important; }
+
+  /* Dark mode keeps the flat dark background */
+  .dark body {
+    background: hsl(var(--background));
+    background-attachment: unset;
+  }
+
+  /* Sidebar: transparent so the body's fixed-gradient shows through, keeping colour-match on scroll */
+  :root:not(.dark) [data-sidebar="sidebar"] { --sidebar-background: 190 80% 15%; --sidebar-foreground: 0 0% 100%; --sidebar-accent: 185 70% 30%; --sidebar-accent-foreground: 0 0% 100%; --sidebar-border: 190 70% 25%; border-color: hsl(var(--sidebar-border)) !important; background-color: hsl(var(--sidebar-background)) !important; background-image: linear-gradient(to bottom, hsl(185 85% 38%) 0%, hsl(185 85% 38%) 56px, hsl(195 85% 15%) 100%) !important; }
+
+  /* Dark mode keeps the sidebar's own dark background */
+  .dark [data-sidebar="sidebar"] {
+    background: hsl(var(--sidebar-background));
+  }
+
+  /* Focus styles - completely removed white flash and focus ring on click */
+  *:focus {
+    @apply outline-none ring-0 ring-offset-0;
+  }
+
+  *:focus:not(:focus-visible) {
+    @apply ring-0 ring-offset-0;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-0 ring-offset-0;
+  }
+
+  /* Remove white flash on buttons and interactive elements */
+  button,
+  [role="button"],
+  a,
+  input,
+  textarea,
+  select,
+  [tabindex] {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  button:active,
+  [role="button"]:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+
+  /* Hide scrollbars (scroll still works) — but NOT on .custom-scrollbar-purple elements */
+  :not(.custom-scrollbar-purple)::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  :not(.custom-scrollbar-purple)::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  :not(.custom-scrollbar-purple)::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  /* Firefox scrollbar */
+  *:not(.custom-scrollbar-purple) {
+    scrollbar-width: none;
+  }
+}
+
+/* Custom Purple Scrollbar specific for high-fidelity areas */
+@layer utilities {
+  .custom-scrollbar-purple {
+    scrollbar-width: thin !important;
+    scrollbar-color: hsl(var(--primary) / 0.4) transparent !important;
+  }
+  .custom-scrollbar-purple::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+    display: block !important;
+  }
+  .custom-scrollbar-purple::-webkit-scrollbar-track {
+    background: transparent !important;
+    margin-block: 4px;
+  }
+  .custom-scrollbar-purple::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.4) !important;
+    border-radius: 9999px !important;
+  }
+  .custom-scrollbar-purple::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.7) !important;
+  }
+}
+
+/* Galaxy animations */
+@layer utilities {
+  .galaxy-card {
+    @apply bg-card/80 backdrop-blur-xl border border-galaxy-purple/30 shadow-[0_0_15px_-5px_hsl(var(--galaxy-purple)/0.3)];
+  }
+
+  .galaxy-card {
+    @apply bg-card/80 backdrop-blur-xl border border-galaxy-purple/30 shadow-[0_0_15px_-5px_hsl(var(--galaxy-purple)/0.3)];
+  }
+
+  /* Light-mode button gradient: light purple → lavender → silver */
+  .primary-btn-gradient { background: hsl(180 80% 85%) !important; color: #000000 !important; border-color: hsl(180 80% 75%) !important; box-shadow: 0 1px 3px hsl(180 80% 85% / 0.3); }
+
+  .primary-btn-gradient:hover { background: hsl(180 80% 75%) !important; color: #000000 !important; }
+
+  .dark .primary-btn-gradient {
+    background: transparent;
+    color: inherit;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Galaxy gradient button — dedicated class that overrides primary-btn-gradient */
+  .galaxy-gradient { background: hsl(180 80% 85%) !important; color: #000000 !important; border-color: hsl(180 80% 75%) !important; box-shadow: 0 1px 3px hsl(180 80% 85% / 0.3); }
+
+  .galaxy-gradient:hover { background: hsl(180 80% 75%) !important; color: #000000 !important; }
+
+  .dark .galaxy-gradient { background: hsl(180 80% 85%) !important; color: #000000 !important; border-color: hsl(180 80% 75%) !important; box-shadow: 0 1px 3px hsl(180 80% 85% / 0.3); }
+
+  .dark .galaxy-gradient:hover { background: hsl(180 80% 75%) !important; color: #000000 !important; }
+
+  /* Hero landing page title gradient text */
+  .hero-title-dark {
+    background: linear-gradient(to right, hsl(270 70% 60%), hsl(250 65% 55%), hsl(195 85% 50%)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent;
+  }
+
+  .hero-title-light {
+    background: linear-gradient(to right, hsl(268 50% 65%), hsl(270 40% 72%), hsl(255 18% 82%)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent;
+  }
+
+  /* Galaxy page-header banner */
+  .bg-galaxy-header { background: linear-gradient(to right, hsl(195 65% 22%) 0%, hsl(195 65% 22%) 25%, hsla(195, 65%, 22%, 0) 100%) !important; color: #ffffff !important; border: none !important; } .bg-galaxy-header .galaxy-title-primary, .bg-galaxy-header .galaxy-title-secondary, .bg-galaxy-header .galaxy-title-purple { background-image: none !important; color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; background-clip: initial !important; -webkit-background-clip: initial !important; } .bg-galaxy-header p.text-muted-foreground { color: rgba(255, 255, 255, 0.9) !important; }
+
+  .dark .bg-galaxy-header { background: linear-gradient(to right, hsl(195 65% 22%) 0%, hsl(195 65% 22%) 25%, hsla(195, 65%, 22%, 0) 100%) !important; color: #ffffff !important; border: none !important; } .bg-galaxy-header .galaxy-title-primary, .bg-galaxy-header .galaxy-title-secondary, .bg-galaxy-header .galaxy-title-purple { background-image: none !important; color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; background-clip: initial !important; -webkit-background-clip: initial !important; } .bg-galaxy-header p.text-muted-foreground { color: rgba(255, 255, 255, 0.9) !important; }
+
+  /* Smooth fade animations */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    opacity: 0;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
+  }
+
+  .animate-fade-in-down {
+    animation: fadeInDown 0.4s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.4s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.4s ease-out forwards;
+  }
+
+  /* Glow effects */
+  .glow-purple {
+    box-shadow: 0 0 20px hsl(270 70% 60% / 0.3), 0 0 40px hsl(270 70% 60% / 0.15);
+  }
+
+  /* Light mode: make glow barely visible so it blends with the light header */
+  :root:not(.dark) .glow-purple {
+    box-shadow: 0 0 12px hsl(265 20% 85% / 0.25), 0 0 24px hsl(265 15% 90% / 0.12) !important;
+  }
+
+  /* Light mode: header text should be plain black, not gradient purple */
+  :root:not(.dark) .bg-clip-text.text-transparent {
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    color: hsl(0 0% 8%) !important;
+    background: none !important;
+  }
+
+  /* Light mode: tab triggers should use lavender-grey when active */
+  :root:not(.dark) [data-state="active"][role="tab"] {
+    background: hsl(265 15% 93%) !important;
+    color: hsl(0 0% 10%) !important;
+    box-shadow: 0 1px 2px hsl(265 15% 85% / 0.3) !important;
+  }
+
+  /* Light mode: checkboxes use soft lavender instead of vivid purple */
+  :root:not(.dark) [role="checkbox"] {
+    border-color: hsl(265 25% 78%) !important;
+  }
+
+  :root:not(.dark) [role="checkbox"][data-state="checked"] {
+    background-color: hsl(265 28% 78%) !important;
+    border-color: hsl(265 28% 78%) !important;
+  }
+
+  /* Light mode: selected table rows use soft lavender tint */
+  :root:not(.dark) tr.bg-primary\/10,
+  :root:not(.dark) [class*="bg-primary/10"] {
+    background-color: hsl(265 20% 94%) !important;
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 20px hsl(255 20% 68% / 0.4), 0 0 40px hsl(255 20% 68% / 0.2);
+  }
+
+  .glow-subtle {
+    box-shadow: 0 0 30px hsl(270 50% 65% / 0.12), 0 0 60px hsl(255 15% 72% / 0.08);
+  }
+
+  /* Star sparkle effect */
+  .sparkle {
+    position: relative;
+  }
+
+  .sparkle::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, hsl(195 85% 70%) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  /* Gradient backgrounds */
+  .bg-galaxy-gradient {
+    background: linear-gradient(135deg,
+        hsl(260 40% 6%) 0%,
+        hsl(270 50% 12%) 25%,
+        hsl(260 45% 8%) 50%,
+        hsl(195 40% 10%) 75%,
+        hsl(260 40% 6%) 100%);
+  }
+
+  .bg-galaxy-card {
+    background: linear-gradient(145deg,
+        hsl(260 35% 12% / 0.9) 0%,
+        hsl(270 40% 10% / 0.95) 100%);
+    backdrop-filter: blur(10px);
+  }
+
+  .bg-galaxy-header { background: linear-gradient(to right, hsl(195 65% 22%) 0%, hsl(195 65% 22%) 25%, hsla(195, 65%, 22%, 0) 100%) !important; color: #ffffff !important; border: none !important; } .bg-galaxy-header .galaxy-title-primary, .bg-galaxy-header .galaxy-title-secondary, .bg-galaxy-header .galaxy-title-purple { background-image: none !important; color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; background-clip: initial !important; -webkit-background-clip: initial !important; } .bg-galaxy-header p.text-muted-foreground { color: rgba(255, 255, 255, 0.9) !important; }
+
+  /* Dark mode header - subtle dark gradient */
+  .dark .bg-galaxy-header { background: linear-gradient(to right, hsl(195 65% 22%) 0%, hsl(195 65% 22%) 25%, hsla(195, 65%, 22%, 0) 100%) !important; color: #ffffff !important; border: none !important; } .bg-galaxy-header .galaxy-title-primary, .bg-galaxy-header .galaxy-title-secondary, .bg-galaxy-header .galaxy-title-purple { background-image: none !important; color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; background-clip: initial !important; -webkit-background-clip: initial !important; } .bg-galaxy-header p.text-muted-foreground { color: rgba(255, 255, 255, 0.9) !important; }
+
+  /* Light mode: glassy see-through separator lines for sidebar and header */
+  :root:not(.dark) [data-sidebar="sidebar"] {
+    border-color: hsl(265 20% 80% / 0.4) !important;
+  }
+
+  :root:not(.dark) header.border-b {
+    border-color: hsl(265 20% 80% / 0.4) !important;
+  }
+
+  /* Light mode: soften icon gradient backgrounds (from-primary to-accent is too vivid) */
+  :root:not(.dark) .glow-purple {
+    background: linear-gradient(to bottom right,
+        hsl(268 30% 82%) 0%,
+        hsl(255 14% 88%) 100%) !important;
+  }
+
+  /* Card/table subtle bottom-darkening gradient in light mode */
+  :root:not(.dark) .card-table-gradient {
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        hsl(265 15% 93%) 100%);
+  }
+
+  /* Nebula effect for backgrounds */
+  .nebula-overlay {
+    position: relative;
+  }
+
+  .nebula-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 30%, hsl(270 50% 60% / 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 70%, hsl(255 18% 70% / 0.07) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, hsl(265 30% 65% / 0.05) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* Smooth hover transitions - no movement */
+  .hover-lift {
+    transition: box-shadow 0.3s ease-out;
+  }
+
+  .hover-lift:hover {
+    box-shadow: 0 8px 30px hsl(270 70% 50% / 0.15);
+  }
+
+  /* Menu button fill effect */
+  .menu-fill-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .menu-fill-effect::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+        hsl(270 70% 55% / 0.15) 0%,
+        hsl(195 85% 55% / 0.08) 50%,
+        transparent 100%);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-out;
+    pointer-events: none;
+  }
+
+  .menu-fill-effect:hover::before {
+    transform: scaleY(1);
+  }
+
+  /* Pulse glow animation */
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  /* Stagger animation delays */
+  .stagger-1 {
+    animation-delay: 50ms;
+  }
+
+  .stagger-2 {
+    animation-delay: 100ms;
+  }
+
+  .stagger-3 {
+    animation-delay: 150ms;
+  }
+
+  .stagger-4 {
+    animation-delay: 200ms;
+  }
+
+  .stagger-5 {
+    animation-delay: 250ms;
+  }
+
+  /* No animations mode */
+  .no-animations,
+  .no-animations * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Sidebar menu hover effect - blueish purple fade 0.5s */
+  .sidebar-menu-hover {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+  }
+
+  .sidebar-menu-hover::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, hsl(175 100% 45% / 0.1) 0%, transparent 100%) !important; opacity: 0; transition: opacity 0.5s ease-out; pointer-events: none; border-radius: inherit; }
+
+  .sidebar-menu-hover:hover::before {
+    opacity: 1;
+  }
+
+  /* Folder slide animation */
+  .folder-slide-in {
+    animation: folderSlide 0.3s ease-out forwards;
+  }
+
+  /* Panel float in animation - matches Klinika Admin style */
+  .panel-float-in {
+    opacity: 0;
+    animation: fadeInUp 0.4s ease-out forwards;
+  }
+
+  /* Animated select/dropdown outline */
+  .select-animated-outline {
+    position: relative;
+    transition: all 0.3s ease-out;
+  }
+
+  .select-animated-outline::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: calc(var(--radius) + 2px);
+    background: linear-gradient(90deg,
+        hsl(270 70% 55%) 0%,
+        hsl(195 85% 55%) 25%,
+        hsl(270 70% 55%) 50%,
+        hsl(195 85% 55%) 75%,
+        hsl(270 70% 55%) 100%);
+    background-size: 200% 100%;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease-out;
+  }
+
+  .select-animated-outline::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: calc(var(--radius) + 2px);
+    background: hsl(var(--background));
+    z-index: -1;
+    margin: 2px;
+  }
+
+  .select-animated-outline[data-state="open"]::before {
+    opacity: 1;
+    animation: borderGlow 2s linear infinite;
+  }
+
+  .select-animated-outline[data-state="open"] {
+    box-shadow: 0 0 15px hsl(300 70% 60% / 0.3);
+    animation: pinkPulse 2s ease-in-out infinite;
+  }
+
+  /* Checkbox glow border animation when locked/checked */
+  .checkbox-glow-active {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkbox-glow-active::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg,
+        hsl(270 70% 55%) 0%,
+        hsl(195 85% 55%) 25%,
+        hsl(270 70% 55%) 50%,
+        hsl(195 85% 55%) 75%,
+        hsl(270 70% 55%) 100%);
+    opacity: 1;
+    z-index: 0;
+    animation: checkboxBorderSpin 2s linear infinite, checkboxGlowIn 0.3s ease-out forwards;
+  }
+
+  .checkbox-glow-active::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    background: hsl(var(--background));
+    z-index: 1;
+  }
+
+  /* Flowing color orbs for background */
+  .color-orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+    opacity: 0;
+    animation: orbFloat 20s ease-in-out infinite;
+  }
+
+  .color-orb-1 {
+    width: 400px;
+    height: 400px;
+    background: hsl(265 45% 65% / 0.12);
+    top: 10%;
+    left: -100px;
+    animation-delay: 0s;
+  }
+
+  .color-orb-2 {
+    width: 350px;
+    height: 350px;
+    background: hsl(255 18% 72% / 0.10);
+    top: 50%;
+    right: -80px;
+    animation-delay: 5s;
+  }
+
+  .color-orb-3 {
+    width: 300px;
+    height: 300px;
+    background: hsl(270 40% 70% / 0.08);
+    bottom: 10%;
+    left: 30%;
+    animation-delay: 10s;
+  }
+
+  .color-orb-4 {
+    width: 250px;
+    height: 250px;
+    background: hsl(260 25% 75% / 0.07);
+    top: 30%;
+    right: 30%;
+    animation-delay: 15s;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Page Transition System ─── */
+
+/* Wrapper: positions shockwave behind content */
+.page-transition-wrapper {
+  position: relative;
+  min-height: 200px;
+}
+
+/* Content sits above the shockwave */
+.page-content-layer {
+  position: relative;
+  z-index: 1;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Content hidden state — BULLETPROOF with !important */
+/* Toggled via direct DOM classList.add/remove in useLayoutEffect */
+.page-content-hidden {
+  opacity: 0 !important;
+  transform: scale(0.98) translateY(8px) !important;
+  filter: blur(2px) !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* ─── Shockwave Ring ─── */
+/* Frosted-glass radial ring expanding from center */
+/* Uses backdrop-filter to distort the background through it, */
+/* and soft box-shadow for diffused glowing edges (no hard border). */
+.shockwave-ring {
+  position: fixed;
+  top: 50%;
+  left: calc(50% + 8rem);
+  /* offset for sidebar width */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  /* No border — soft edges only */
+  border: none;
+  /* Soft radial fill — transparent center, gentle glow at edges */
+  background: radial-gradient(circle,
+      transparent 0%,
+      transparent 55%,
+      hsl(var(--primary) / 0.05) 65%,
+      hsl(var(--primary) / 0.08) 80%,
+      hsl(var(--primary) / 0.04) 95%,
+      transparent 100%);
+  /* Soft glowing edges — large blur radius for diffused look */
+  box-shadow:
+    0 0 60px 20px hsl(var(--primary) / 0.07),
+    0 0 120px 40px hsl(var(--primary) / 0.04),
+    inset 0 0 40px 15px hsl(var(--primary) / 0.04);
+  /* Glass distortion — blurs background behind the ring */
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+  z-index: 0;
+  animation: shockwaveExpand 3.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes shockwaveExpand {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0.5;
+  }
+
+  35% {
+    opacity: 0.35;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(25);
+    opacity: 0;
+  }
+}
+
+/* ─── Staggered Children Animation ─── */
+/* Apply to a container: children cascade in with incremental delays */
+.stagger-children>* {
+  opacity: 0;
+  animation: fadeInUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stagger-children>*:nth-child(1) {
+  animation-delay: 0.04s;
+}
+
+.stagger-children>*:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.stagger-children>*:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.stagger-children>*:nth-child(4) {
+  animation-delay: 0.22s;
+}
+
+.stagger-children>*:nth-child(5) {
+  animation-delay: 0.28s;
+}
+
+.stagger-children>*:nth-child(6) {
+  animation-delay: 0.34s;
+}
+
+.stagger-children>*:nth-child(7) {
+  animation-delay: 0.40s;
+}
+
+.stagger-children>*:nth-child(8) {
+  animation-delay: 0.46s;
+}
+
+.stagger-children>*:nth-child(n+9) {
+  animation-delay: 0.50s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes sparkle {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px hsl(270 70% 60% / 0.2), 0 0 40px hsl(195 85% 55% / 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 30px hsl(270 70% 60% / 0.4), 0 0 60px hsl(195 85% 55% / 0.2);
+  }
+}
+
+/* Star field background effect */
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes folderSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.folder-slide-in {
+  animation: folderSlide 0.3s ease-out both;
+}
+
+@keyframes panelFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel-float-in {
+  animation: panelFloat 0.4s ease-out both;
+}
+
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes checkboxGlowIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes checkboxBorderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pinkPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px hsl(300 70% 60% / 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 20px hsl(300 70% 60% / 0.4), 0 0 30px hsl(300 70% 60% / 0.2);
+  }
+}
+
+@keyframes orbFloat {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate(0, 0) scale(1);
+  }
+
+  10% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: translate(50px, 30px) scale(1.1);
+  }
+
+  90% {
+    opacity: 0.6;
+  }
+}
+
+.star-field {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: hsl(195 85% 80%);
+  border-radius: 50%;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Table row stagger animations */
+@keyframes tableRowEnter {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.table-row-animate {
+  animation: tableRowEnter 0.3s ease-out both;
+}
+
+.table-row-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.table-row-animate:nth-child(2) {
+  animation-delay: 30ms;
+}
+
+.table-row-animate:nth-child(3) {
+  animation-delay: 60ms;
+}
+
+.table-row-animate:nth-child(4) {
+  animation-delay: 90ms;
+}
+
+.table-row-animate:nth-child(5) {
+  animation-delay: 120ms;
+}
+
+.table-row-animate:nth-child(6) {
+  animation-delay: 150ms;
+}
+
+.table-row-animate:nth-child(7) {
+  animation-delay: 180ms;
+}
+
+.table-row-animate:nth-child(8) {
+  animation-delay: 210ms;
+}
+
+.table-row-animate:nth-child(9) {
+  animation-delay: 240ms;
+}
+
+.table-row-animate:nth-child(10) {
+  animation-delay: 270ms;
+}
+
+/* Menu item hover fill effect */
+@keyframes menuItemFill {
+  from {
+    background-position: 0% 100%;
+  }
+
+  to {
+    background-position: 0% 0%;
+  }
+}
+
+.menu-item-fill {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to top,
+      hsl(270 70% 55% / 0.12) 0%,
+      hsl(195 85% 55% / 0.08) 50%,
+      transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  transition: background-position 0.3s ease-out;
+}
+
+.menu-item-fill:hover {
+  background-position: 0% 100%;
+}
+
+/* Dropdown item gradient hover */
+.dropdown-item-hover {
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+
+.dropdown-item-hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+      hsl(270 70% 55% / 0.1) 0%,
+      hsl(195 85% 55% / 0.15) 50%,
+      hsl(270 70% 55% / 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.dropdown-item-hover:hover::before,
+.dropdown-item-hover:focus::before {
+  opacity: 1;
+}
+
+/* Card hover with galaxy glow */
+.card-galaxy-hover {
+  transition: all 0.3s ease-out;
+}
+
+.card-galaxy-hover:hover {
+  box-shadow:
+    0 4px 20px hsl(270 70% 55% / 0.1),
+    0 0 40px hsl(195 85% 55% / 0.05);
+  border-color: hsl(270 70% 55% / 0.3);
+}
+
+/* Table header sticky with blur */
+.table-header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  background: hsl(var(--card) / 0.9);
+}
+
+/* Sidebar menu icon animations */
+@keyframes iconFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+/* Smooth float that starts from the slightly-scaled active resting position */
+@keyframes iconFloatSmooth {
+
+  0%,
+  100% {
+    transform: scale(1.15) translateY(0);
+  }
+
+  50% {
+    transform: scale(1.15) translateY(-2px);
+  }
+}
+
+.sidebar-icon-hover {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.5s ease;
+}
+
+/* Icon rotates when hovering over the entire menu item (parent) */
+.sidebar-menu-gradient:hover .sidebar-icon-hover {
+  transform: scale(1.5) rotate(-20deg);
+  filter: drop-shadow(0 0 4px hsl(300 70% 60% / 0.5));
+}
+
+/* Slow floating animation for active/selected menu icons */
+.sidebar-menu-gradient.active .sidebar-icon-hover {
+  /* Start animation from a slightly scaled-up position to smoothly bridge the hover → active gap */
+  animation: iconFloatSmooth 5s ease-in-out 0.4s infinite;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 3px hsl(300 70% 60% / 0.3));
+}
+
+/* Sidebar menu item with gradient hover - neon pink fading to top completely */
+.sidebar-menu-gradient {
+  position: relative;
+  overflow: hidden;
+  background: transparent !important;
+}
+
+.sidebar-menu-gradient::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(to top,
+      hsl(270 70% 60% / 0.35) 0%,
+      hsl(270 65% 55% / 0.25) 25%,
+      hsl(270 60% 50% / 0.15) 50%,
+      hsl(270 55% 45% / 0.08) 75%,
+      transparent 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+:root:not(.dark) .sidebar-menu-gradient::before {
+  background: linear-gradient(to top,
+      hsl(265 20% 82% / 0.4) 0%,
+      hsl(265 16% 85% / 0.28) 25%,
+      hsl(265 12% 88% / 0.16) 50%,
+      hsl(260 8% 92% / 0.08) 75%,
+      transparent 100%);
+}
+
+.sidebar-menu-gradient:hover::before {
+  opacity: 1;
+}
+
+/* Active menu item - slow pulsing neon pink gradient (6s cycle = 2x slower) */
+@keyframes gradientPulseSlow {
+
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.sidebar-menu-gradient.active::before {
+  opacity: 1;
+  animation: gradientPulseSlow 6s ease-in-out infinite;
+}
+
+/* Sub-tab active pulse (very slow breathing) */
+@keyframes subtabPulse {
+
+  0%,
+  100% {
+    opacity: 0.65;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.subtab-pulse {
+  animation: subtabPulse 8s ease-in-out infinite;
+}
+
+/* Snake border animation for dropdowns */
+@keyframes snakeBorderIn {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes snakeBorderOut {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -1000;
+  }
+}
+
+.dropdown-snake-border {
+  position: relative;
+}
+
+.dropdown-snake-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: calc(var(--radius) + 2px);
+  padding: 2px;
+  background: linear-gradient(90deg,
+      hsl(300 70% 60%) 0%,
+      hsl(270 70% 55%) 33%,
+      hsl(195 85% 55%) 66%,
+      hsl(300 70% 60%) 100%);
+  background-size: 300% 100%;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  animation: neonGradientFlow 2s linear infinite;
+}
+
+@keyframes neonGradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+.dropdown-snake-border[data-state="open"]::before {
+  opacity: 1;
+}
+
+/* SVG-based snake border for precise control */
+.snake-border-wrapper {
+  position: relative;
+}
+
+.snake-border-wrapper svg.snake-border {
+  position: absolute;
+  inset: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.snake-border-wrapper svg.snake-border rect {
+  fill: none;
+  stroke: url(#neonGradient);
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s ease-out;
+}
+
+.snake-border-wrapper[data-state="open"] svg.snake-border rect {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.4s ease-out;
+}
+
+/* Dropdown trigger with snake animation */
+.select-snake-border {
+  position: relative;
+  overflow: visible;
+}
+
+.select-snake-border::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: calc(var(--radius) + 2px);
+  background: conic-gradient(from 270deg at 50% 0%,
+      transparent 0deg,
+      hsl(300 70% 60%) 60deg,
+      hsl(270 70% 55%) 120deg,
+      hsl(195 85% 55%) 180deg,
+      hsl(270 70% 55%) 240deg,
+      hsl(300 70% 60%) 300deg,
+      transparent 360deg);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px;
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: opacity 0.3s ease-out, transform 0.6s ease-out;
+}
+
+.select-snake-border[data-state="open"]::after {
+  opacity: 1;
+  animation: snakeRotate 3s linear infinite;
+}
+
+@keyframes snakeRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Legacy dropdown-neon-snake class - kept for backwards compatibility but disabled */
+.dropdown-neon-snake {
+  position: relative;
+}
+
+/* Dialog neon border animation - clean border (no clipping/offset) */
+.dialog-neon-border {
+  position: relative;
+  isolation: isolate;
+}
+
+.dialog-neon-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  padding: 2px;
+  background: linear-gradient(90deg,
+      hsl(var(--nebula-pink)) 0%,
+      hsl(var(--sparkle-blue)) 25%,
+      hsl(var(--galaxy-purple)) 50%,
+      hsl(var(--sparkle-blue)) 75%,
+      hsl(var(--nebula-pink)) 100%);
+  background-size: 300% 100%;
+  animation: dialogNeonFlow 6s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.85;
+  z-index: 1;
+}
+
+@keyframes dialogNeonFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+/* Dialog fade in animation kept minimal to avoid transform conflicts */
+@keyframes dialogFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── Galaxy Particle Menu Item animations ── */
+@keyframes galaxyMenuEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(8px);
+    filter: brightness(1.8) blur(2px);
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-2px);
+    filter: brightness(1.4) blur(0px);
+  }
+
+  70% {
+    transform: scale(0.98) translateY(1px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: brightness(1) blur(0px);
+  }
+}
+
+@keyframes galaxyMenuExit {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: brightness(1) blur(0px);
+  }
+
+  30% {
+    transform: scale(1.03) translateY(-2px);
+    filter: brightness(1.3) blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.7) translateY(8px);
+    filter: brightness(1.8) blur(2px);
+  }
+}
+
+@keyframes galaxyParticlesBurst {
+  0% {
+    opacity: 0;
+    box-shadow:
+      0 0 0 0 rgba(168, 85, 247, 0),
+      8px -6px 0 0 rgba(147, 51, 234, 0),
+      -10px -4px 0 0 rgba(192, 132, 252, 0),
+      12px 8px 0 0 rgba(139, 92, 246, 0),
+      -8px 10px 0 0 rgba(167, 139, 250, 0),
+      16px 0 0 0 rgba(124, 58, 237, 0),
+      -14px -8px 0 0 rgba(196, 181, 253, 0);
+  }
+
+  30% {
+    opacity: 1;
+    box-shadow:
+      -4px -10px 4px 1px rgba(168, 85, 247, 0.9),
+      14px -14px 3px 1px rgba(147, 51, 234, 0.8),
+      -18px -8px 3px 1px rgba(192, 132, 252, 0.7),
+      20px 14px 4px 1px rgba(139, 92, 246, 0.8),
+      -14px 18px 3px 1px rgba(167, 139, 250, 0.7),
+      24px -2px 3px 1px rgba(124, 58, 237, 0.6),
+      -22px -14px 4px 1px rgba(196, 181, 253, 0.5);
+  }
+
+  100% {
+    opacity: 0;
+    box-shadow:
+      -8px -24px 4px 0px rgba(168, 85, 247, 0),
+      28px -28px 3px 0px rgba(147, 51, 234, 0),
+      -34px -16px 3px 0px rgba(192, 132, 252, 0),
+      38px 28px 4px 0px rgba(139, 92, 246, 0),
+      -28px 36px 3px 0px rgba(167, 139, 250, 0),
+      42px -6px 3px 0px rgba(124, 58, 237, 0),
+      -40px -28px 4px 0px rgba(196, 181, 253, 0);
+  }
+}
+
+@keyframes galaxyGlow {
+  0% {
+    box-shadow: 0 0 0px rgba(168, 85, 247, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4), 0 0 40px rgba(139, 92, 246, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0px rgba(168, 85, 247, 0);
+  }
+}
+
+.galaxy-menu-enter {
+  animation: galaxyMenuEnter 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.galaxy-menu-exit {
+  animation: galaxyMenuExit 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) forwards;
+}
+
+.galaxy-menu-item {
+  position: relative;
+}
+
+.galaxy-menu-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.galaxy-menu-enter::before {
+  animation: galaxyParticlesBurst 0.8s ease-out forwards;
+}
+
+.galaxy-menu-enter::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 8px;
+  pointer-events: none;
+  animation: galaxyGlow 1s ease-in-out forwards;
+}
+
+/* ── Neon float-in for newly revealed sidebar menu items ── */
+.menu-float-in {
+  animation: menuFloatIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes menuFloatIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+    filter: drop-shadow(0 0 0px hsl(210 100% 55% / 0));
+  }
+
+  40% {
+    filter: drop-shadow(0 0 8px hsl(210 100% 60% / 0.7));
+  }
+
+  70% {
+    filter: drop-shadow(0 0 6px hsl(210 100% 60% / 0.4));
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: drop-shadow(0 0 0px hsl(210 100% 60% / 0));
+  }
+}
+
+/* ── Explicit Dialog Animations (bypassing Tailwindcss-animate) ── */
+@keyframes dialogIn {
+  from {
+    opacity: 0;
+    transform: translateY(2rem) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dialogOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(2rem) scale(0.95);
+  }
+}
+
+.dialog-content-animated[data-state="open"] {
+  animation: dialogIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.dialog-content-animated[data-state="closed"] {
+  animation: dialogOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes dialogOverlayIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes dialogOverlayOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.dialog-overlay-animated[data-state="open"] {
+  animation: dialogOverlayIn 0.2s ease-out forwards;
+}
+
+.dialog-overlay-animated[data-state="closed"] {
+  animation: dialogOverlayOut 0.2s ease-in forwards;
+}
+.sidebar-menu-gradient { color: rgba(255, 255, 255, 0.9) !important; } .sidebar-menu-gradient:hover { background: hsl(185 70% 40% / 0.4) !important; color: #ffffff !important; } .sidebar-menu-gradient.active { background: linear-gradient(135deg, hsl(185 90% 50% / 0.3) 0%, hsl(195 90% 40% / 0.3) 100%) !important; color: #ffffff !important; box-shadow: inset 3px 0 0 hsl(185 90% 50%) !important; font-weight: 600 !important; } 
+.layout-header { background: linear-gradient(to right, hsl(185 85% 38%) 0%, hsl(185 85% 38%) 40%, transparent 100%) !important; border-bottom: none !important; box-shadow: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; } .layout-header [data-sidebar="trigger"], .layout-header .header-controls button { color: hsl(0 0% 100%) !important; } .layout-header [data-sidebar="trigger"]:hover, .layout-header .header-controls button:hover { background: hsl(0 0% 100% / 0.15) !important; } .group-data-\[side\=left\]\:border-r { border-right: none !important; }
+

@@ -1,0 +1,402 @@
+[
+  {
+    "code": "11011",
+    "name": "Elsősegély"
+  },
+  {
+    "code": "11030",
+    "name": "Sürgősségi beteg osztályozás (triázs)"
+  },
+  {
+    "code": "11031",
+    "name": "Sürgősségi beteg újra-osztályozás (re-triázs)"
+  },
+  {
+    "code": "11041",
+    "name": "Vizsgálat"
+  },
+  {
+    "code": "11042",
+    "name": "Vizsgálat a rendelőn kívül"
+  },
+  {
+    "code": "11043",
+    "name": "Beutalás laborvizsgálatra távkonzultáció nyomán"
+  },
+  {
+    "code": "11044",
+    "name": "Intervenciós radiológiai beavatkozás során végzett vizsgálat"
+  },
+  {
+    "code": "11045",
+    "name": "Vastagbélszűrés keretében végzett vizsgálat"
+  },
+  {
+    "code": "11047",
+    "name": "Alkalmassági vizsgálat tömegsportolásra"
+  },
+  {
+    "code": "11048",
+    "name": "Vizsgálat hatósági felkérésre"
+  },
+  {
+    "code": "11050",
+    "name": "Vastagbélszűrés keretében végzett szakasszisztensi, vagy szakorvosi tájékoztatás"
+  },
+  {
+    "code": "11054",
+    "name": "Szakorvosi vizsgálat és szakvélemény kiadása szociális ellátásra való jogosultság megállapításához"
+  },
+  {
+    "code": "11055",
+    "name": "Bizottság komplex szakvéleményének kialakítása és kiadása a megváltozott munkaképességű személyek esetén"
+  },
+  {
+    "code": "11057",
+    "name": "Vizsgálat a szakmai alkalmasság I. fokon történő elbírálására"
+  },
+  {
+    "code": "11058",
+    "name": "Vizsgálat a szakmai alkalmasság II. fokon történő elbírálására"
+  },
+  {
+    "code": "11059",
+    "name": "Vizsgálat a munkaköri alkalmasság II. fokon történő elbírálására"
+  },
+  {
+    "code": "11060",
+    "name": "Vizsgálat foglalkozási megbetegedés megelőzése vagy megállapítása céljából"
+  },
+  {
+    "code": "11061",
+    "name": "Szakhatósági és szakértői feladatok ellátásához kapcsolódó vélemény kialakítása és kiadása I. és II. fokon, személyes megjelenéssel"
+  },
+  {
+    "code": "11062",
+    "name": "Szakhatósági és szakértői feladatok ellátásához kapcsolódó vélemény kialakítása és kiadása I. és II. fokon irat alapján"
+  },
+  {
+    "code": "11063",
+    "name": "Kiegészítő kód az I. és II. fokú komplex és egyéb szakértői vizsgálatok helyszínen történő végzéséhez"
+  },
+  {
+    "code": "11064",
+    "name": "A felsőoktatásban részt vevő hallgatók fogyatékosságának megállapítására irányuló szakértői eljárás végzése"
+  },
+  {
+    "code": "11065",
+    "name": "Rekonstruktív Reproduktív Medicina  kezdő konzultáció"
+  },
+  {
+    "code": "11066",
+    "name": "Rekonstruktív Reproduktív Medicina  záró konzultáció"
+  },
+  {
+    "code": "11301",
+    "name": "Kontrollvizsgálat, konzílium"
+  },
+  {
+    "code": "11302",
+    "name": "Kontrollvizsgálat, konzílium a rendelőn kívül vagy telemedicina keretében"
+  },
+  {
+    "code": "11303",
+    "name": "Vastagbélszűrés keretében végzett kontrollvizsgálat, konzílium"
+  },
+  {
+    "code": "12000",
+    "name": "Szenzórium vizsgálata"
+  },
+  {
+    "code": "12001",
+    "name": "Tudatállapot, alvás/ébrenlét vezérlésének vizsgálata"
+  },
+  {
+    "code": "12002",
+    "name": "Agyidegek vizsgálata"
+  },
+  {
+    "code": "12003",
+    "name": "Perifériás idegrendszer vizsgálata"
+  },
+  {
+    "code": "12004",
+    "name": "Érzőkör vizsgálata"
+  },
+  {
+    "code": "12005",
+    "name": "Koordinatio vizsgálata"
+  },
+  {
+    "code": "12006",
+    "name": "Vegetatív idegrendszer vizsgálata"
+  },
+  {
+    "code": "12030",
+    "name": "Kortikális lebenyfunkciók vizsgálata"
+  },
+  {
+    "code": "12031",
+    "name": "Afázia neurológiai vizsgálata"
+  },
+  {
+    "code": "12032",
+    "name": "Demencia vizsgálata"
+  },
+  {
+    "code": "12033",
+    "name": "Memória és figyelmi funkciók vizsgálata"
+  },
+  {
+    "code": "12051",
+    "name": "Extrapyramidalis elemi mozgásszabályozás vizsgálata"
+  },
+  {
+    "code": "12052",
+    "name": "Actographia"
+  },
+  {
+    "code": "12054",
+    "name": "Extrapyramidális mozgásszabályozás vizsgálata a mozgatórendszer betegségeiben"
+  },
+  {
+    "code": "12060",
+    "name": "Lumbálpunkció"
+  },
+  {
+    "code": "12061",
+    "name": "Ciszterna punkció"
+  },
+  {
+    "code": "12065",
+    "name": "Intracarotidealis sodium-amytal-próba (WADA-teszt), a beszéddomináns félteke meghatározása"
+  },
+  {
+    "code": "12066",
+    "name": "Edrophonium hydrochloricum teszt"
+  },
+  {
+    "code": "12070",
+    "name": "Standard EEG"
+  },
+  {
+    "code": "12071",
+    "name": "EEG kiegészítő extra provokáció (egyenként)"
+  },
+  {
+    "code": "12072",
+    "name": "Sphenoidalis elektród behelyezése EEG vizsgálathoz"
+  },
+  {
+    "code": "12073",
+    "name": "EEG alvásmegvonás után, ragasztott elektróddal"
+  },
+  {
+    "code": "12074",
+    "name": "EEG telemetriával"
+  },
+  {
+    "code": "12075",
+    "name": "12-24 órás mobil, kazettás EEG monitorozás"
+  },
+  {
+    "code": "12076",
+    "name": "EEG-videó monitorozás (legalább 3 óra)"
+  },
+  {
+    "code": "12077",
+    "name": "EEG térképezés"
+  },
+  {
+    "code": "12078",
+    "name": "EEG mennyiségi-statisztikai elemzéssel"
+  },
+  {
+    "code": "12079",
+    "name": "EEG poligráfiás monitorizálás (24 órás), komputeres"
+  },
+  {
+    "code": "1207A",
+    "name": "EEG split screen"
+  },
+  {
+    "code": "1207B",
+    "name": "EEG epilepsia műtéte előtt, strip behelyezéssel"
+  },
+  {
+    "code": "1207C",
+    "name": "Poliszomnográfia (PSG)"
+  },
+  {
+    "code": "1207D",
+    "name": "Poliszomnográfia (min. 6 óra) speciális vérnyomásméréssel"
+  },
+  {
+    "code": "1207R",
+    "name": "Polygraphia (cardio-respiratórikus)"
+  },
+  {
+    "code": "1207S",
+    "name": "Cerebrovascularis reservkapacitás (CRK) vizsgálat CO2-vel"
+  },
+  {
+    "code": "1207T",
+    "name": "Cerebrovascularis reservkapacitás (CRK) vizsgálat acetazolamiddal"
+  },
+  {
+    "code": "12080",
+    "name": "Turn-amplitúdó analízis"
+  },
+  {
+    "code": "12081",
+    "name": "Elektromyographia (izmonként)"
+  },
+  {
+    "code": "12082",
+    "name": "Idegvezetési sebességmérés, érző/motoros idegenként"
+  },
+  {
+    "code": "12083",
+    "name": "Elektromyographia, tűelektróddal izmonként"
+  },
+  {
+    "code": "12085",
+    "name": "Elektromyographia, késői válasz (hullám) vizsgálat"
+  },
+  {
+    "code": "12086",
+    "name": "Repetitív ideg ingerlés"
+  },
+  {
+    "code": "12087",
+    "name": "Elektromyographia, egyes rost vizsgálatok, Jitter mérés"
+  },
+  {
+    "code": "12089",
+    "name": "Motoros rendszer vizsgálata mágneses ingerléssel"
+  },
+  {
+    "code": "1208A",
+    "name": "Elektroneurographia, tűelektródával"
+  },
+  {
+    "code": "1208C",
+    "name": "Elektromyographia palati et laryngis"
+  },
+  {
+    "code": "1208E",
+    "name": "Impulzus diagnosztika a plexus brachialis ellátási területén"
+  },
+  {
+    "code": "1208F",
+    "name": "Impulzus diagnosztika a n. facialis ellátási területén"
+  },
+  {
+    "code": "1208I",
+    "name": "Blink reflex"
+  },
+  {
+    "code": "12090",
+    "name": "Diaphanoscopia cerebri"
+  },
+  {
+    "code": "12091",
+    "name": "Kiváltott válasz vizsgálatok (Retinographia, Visuális, Acusticus, Somatosensoros)"
+  },
+  {
+    "code": "12092",
+    "name": "Akusztikus kiváltott válasz"
+  },
+  {
+    "code": "12094",
+    "name": "Kiváltott potenciál térképezés"
+  },
+  {
+    "code": "12096",
+    "name": "Rheobasis és chronaxia meghatározás"
+  },
+  {
+    "code": "12098",
+    "name": "Fénytörés meghatározása komputerrel"
+  },
+  {
+    "code": "1209A",
+    "name": "Hullámvonal próba"
+  },
+  {
+    "code": "1209B",
+    "name": "Webster-skála"
+  },
+  {
+    "code": "1209C",
+    "name": "Tremometria"
+  },
+  {
+    "code": "1209D",
+    "name": "Tenyér-kézhát próba"
+  },
+  {
+    "code": "1209E",
+    "name": "Pontrakó próba (1 perc)"
+  },
+  {
+    "code": "1209F",
+    "name": "Csecsemőkori látás- és hallásszabályozás (habituatios paradigma) objektív, műszeres vizsgálata 1,5 éves kor alatt"
+  },
+  {
+    "code": "12100",
+    "name": "Perimetria, kinetikus"
+  },
+  {
+    "code": "12101",
+    "name": "Perimetria, komputeres"
+  },
+  {
+    "code": "12102",
+    "name": "Kampimetria, Amsler szerint"
+  },
+  {
+    "code": "12111",
+    "name": "Accomodatio vizsgálata"
+  },
+  {
+    "code": "12112",
+    "name": "Fénytörés objektív meghatározása, sciascopia"
+  },
+  {
+    "code": "12113",
+    "name": "Fénytörés szubjektív meghatározása"
+  },
+  {
+    "code": "12114",
+    "name": "Szaruhártya-görbület mérése computerrel"
+  },
+  {
+    "code": "12115",
+    "name": "Leleplező látásvizsgálat"
+  },
+  {
+    "code": "12130",
+    "name": "Üvegtest biomikroszkópos vizsgálata"
+  },
+  {
+    "code": "12140",
+    "name": "Nyctometria"
+  },
+  {
+    "code": "12141",
+    "name": "Adaptometria"
+  },
+  {
+    "code": "12142",
+    "name": "Fényérzés vizsgálat elsötétített szobában, gyertyával"
+  },
+  {
+    "code": "12150",
+    "name": "Színlátásvizsgálat pseudoisochrom táblákkal"
+  },
+  {
+    "code": "12151",
+    "name": "Anomaloscopia"
+  }
+]

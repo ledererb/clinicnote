@@ -1,0 +1,597 @@
+﻿[6/A. számú melléklet a 43/1999. (III. 3.) Korm. rendelethez]
+
+Ambuláns adatlap
+1. Javítás:
+
+2. Eredeti dátum:
+
+
+
+
+
+
+
+
+
+3. Eredeti szakrendelő:
+
+
+
+
+
+
+
+
+
+4. Eredeti naplósorszám:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. Naplósorszám:
+
+
+
+
+
+
+
+
+6. Rendelő neve:
+
+7. Rendelő azonosítója:
+
+
+
+
+
+
+
+
+
+8. Beutaló munkahely neve*:
+
+9/A. Beutaló orvos munkahelyének
+        azonosítója:
+
+
+
+
+
+
+
+
+
+9/B. Beutaló orvos kódja:
+
+
+
+
+
+
+
+9/C. Beutalást megalapozó ellátást igazoló
+        adat:
+
+
+
+
+
+
+
+
+
+9/D. Beutaló kelte:
+
+
+
+
+
+
+
+
+
+9/E. Elektronikus beutaló EESZT-ben  generált egyedi
+        azonosítója:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10. Térítési kategória:
+
+
+10/A. Részleges térítési díj:
+
+
+
+
+
+
+
+
+
+11. Ellátást végző orvos/szakdolgozó kódja:
+
+
+
+
+
+
+11/A. Az ellátást végző orvos/szakdolgozó kódjának a típusa:
+
+
+12. Érvényes biztosítás országa vagy a beteg állampolgársága:
+
+
+
+
+13. Személyazonosító jel:
+
+
+
+
+
+
+
+
+
+14. Személyazonosító típusa:
+
+
+15. Beteg neve:
+16. Születési dátum:
+
+
+
+
+
+
+
+
+
+17. Anyja neve**:
+18. A beteg leánykori neve**:
+
+19. Lakcím**:
+
+
+
+
+
+
+20. Kezelés ideje:
+
+
+
+
+
+
+
+
+
+
+
+
+21. Beteg neme:
+
+22. Ellátás típusa:
+
+
+23. Továbbküldés:
+
+24. Baleset minősítése**:
+
+
+25. E-adatlap kitöltés
+
+
+26. DIAGNÓZISOK**
+Kód
+
+-1
+
+
+
+
+
+
+-2
+
+
+
+
+
+
+-3
+
+
+
+
+
+
+-4
+
+
+
+
+
+
+-5
+
+
+
+
+
+
+27. BEAVATKOZÁSOK
+Kód
+Me
+
+-1
+
+
+
+
+
+
+
+
+-2
+
+
+
+
+
+
+
+
+-3
+
+
+
+
+
+
+
+
+-4
+
+
+
+
+
+
+
+
+-5
+
+
+
+
+
+
+
+
+-6
+
+
+
+
+
+
+
+
+27/A. Beavatkozások jellege:
+
+28. Laboratóriumi vizsgálat kérés:
+
+
+29. Képalkotó vizsgálat kérés*:
+
+30. CT-MRI-PET vizsgálat kérés*:
+
+
+31. Fizioterápiás ellátásra utalás*:
+
+32. Útiköltség*:
+
+
+33. Keresőképesség elbírálása*:
+
+34. Felírt gyógyászati segédeszköz vények száma**:
+
+
+
+35. Felírt vények száma**:
+
+
+36. Felírt gyógyászati ellátás (gyógyfürdő) vények száma**:
+
+
+
+40. Intézményi várólista esetazonosító***:
+
+
+
+
+
+
+
+
+
+* Kitöltése nem kötelező
+** Laboratóriumi munkahelynél kitöltése nem kötelező
+*** Országos Várólista Rendszerben történő regisztrációs kötelezettség esetén kötelező csak a kitöltése
+
+  Dátum: ……… év …………….…. hó …….. nap			…………………………………….
+	az ellátásért felelős orvos
+	pecsétszám
+Kitöltési útmutató
+
+
+1. Javítás
+0 = új rekord
+1 = javító rekord az intézet kezdeményezésére
+2 = javító rekord az Egészségbiztosító felhívására
+2. Eredeti dátum
+Javítás során a javítandó rekord eredeti ellátási dátuma
+3. Eredeti szakrendelő
+Javítás során a javítandó rekord eredeti szakrendelő kódja
+4. Eredeti naplósorszám
+Javítás során a javítandó rekord eredeti naplósorszáma
+5. Naplósorszám
+A beteg naplósorszáma (első 2 jegy kötetszám, 6 jegy köteten belüli sorszám)
+6. Rendelő neve
+(Elektronikusan nem továbbítandó)
+Az ellátást végző rendelő neve
+7. Rendelő azonosítója
+Az ellátást végző rendelő azonosítója
+8. Beutaló munkahely neve
+(Elektronikusan nem továbbítandó)
+9/A. Beutaló orvos munkahelyének azonosítója
+Finanszírozott egészségügyi szolgáltató orvosának beutalása esetén a szerződés szerinti szervezeti egység azonosító kódja, nem finanszírozott egészségügyi szolgáltató orvosának beutalása esetén a működési engedély szerinti szervezeti egységkód, a NEAK ellenőrző orvosainak beutalása esetén 999999991, az orvos saját maga, vagy közeli hozzátartozója beutalása esetén 999999992
+9/B. Beutaló orvos kódja
+A beutaló orvos pecsétszáma
+9/C. Beutalást megalapozó ellátást igazoló adat
+A beutalást megalapozó ellátás nyilvántartására szolgáló betegforgalmi napló sorszáma, fekvőbeteg gyógyintézet orvosának beutalása esetén a beteg törzsszáma, egyéb, nem finanszírozott egészségügyi szolgáltató orvosának beutalása esetén a beutalás napi dátuma, vezető nullával
+9/D. Beutaló kelte
+9/E. Elektronikus beutaló EESZT-ben generált egyedi azonosítója
+Elektronikus beutaló kiállítása esetén a beutaló EESZT-ben generált egyedi azonosítójának rögzítése
+10. Térítési kategória
+01 = magyar biztosítás alapján végzett ellátás
+03 = államközi szerződés alapján végzett ellátás
+04 = egyéb, magyar biztosítással nem rendelkező vagy más hatályos rendelkezés alapján a társadalombiztosítás terhére el nem számolható ellátást igénybe vevő személyek térítésköteles ellátása
+06 = fekvőbeteg részére végzett ellátás
+61 = magyar biztosítás alapján kórházi fekvőbeteg részére végzett szűrővizsgálat, innovatív diagnosztikai és terápiás eljárások
+09 = külföldön élő magyarok központi költségvetésből támogatott ellátása
+0A = befogadott külföldi állampolgár
+0D = menekült, menedékes státuszt kérelmező
+0E = elszámoláson alapuló nemzetközi szerződés alapján történő ellátás, Közösségi szabály alapján történő ellátás
+0F = magyar biztosítással rendelkező betegnek az Ebtv. 18. § (6) bekezdésének l) pontja szerinti, kizárólag orvostudományi kutatás keretében végzett beavatkozást is tartalmazó ellátása
+0G = magyar biztosítással rendelkező betegnek az Ebtv. 18. § (6) bekezdésének l) pontja szerinti, kizárólag orvostudományi kutatás keretében végzett beavatkozása miatt bekövetkezett szövődmény ellátása
+0H = harmadik országbeli állampolgárnak a harmadik országbeli állampolgárok beutazásáról és tartózkodásáról szóló 2007. évi II. törvény végrehajtásáról szóló 114/2007. (V. 24.) Korm. rendelet 140. §-a szerinti ellátása
+0I =  magyar biztosítás alapján végzett integrált esetfinanszírozás
+0J = fekvőbeteg részére végzett ellátás az integrált esetfinanszírozás körében
+0K = külföldi donor ellátása
+0M = magyar biztosítás alapján méltányosságból átvállalt térítés ellenében végzett ellátás
+0R = magyar biztosítás alapján, részleges térítés ellenében végzett ellátás
+0S = Magyarország területén tartózkodó beteg 4. § (10) és (11) bekezdése szerinti, más forrásból meg nem térülő sürgősségi ellátása
+0T = uniós beteg részére magyar egészségügyi szolgáltató által határon átnyúló egészségügyi ellátás keretében végzett ellátás
+0V = magyar biztosított külföldi ellátása a szociális biztonsági rendszerek koordinálásáról és annak végrehajtásáról szóló uniós rendeletek alapján
+0Y = magyar biztosított külföldi ellátása a határon átnyúló egészségügyi ellátás keretében
+0W = magyar biztosítás alapján magyarországi szolgáltató által a külföldön történő gyógykezelések részletes szabályairól szóló 340/2013. (IX. 25.) Korm. rendelet 5. § (3) bekezdése szerint végzett ellátás
+00 = élsportoló speciális ellátása
+0X = várólista csökkentési többlet forrás terhére történő ellátás, utólagos elszámolással
+BP = budapesti lakosok CT/MRI ellátása
+F1 = fogvatartottak ellátása
+F6 = fekvőbeteg fogvatartottak részére végzett ellátás
+10/A. Részleges térítési díj (Ft):
+0R térítési kategória esetén a részleges térítési díj összegének feltüntetése
+11. Ellátást végző orvos/szakdolgozó kódja
+Az ellátó orvos vagy szakdolgozó pecsétszáma, illetve azonosítója
+11/A. Az ellátást végző orvos/szakdolgozó kódjának a típusa
+1. orvos/fogorvos
+2. gyógyszerész
+3. klinikai végzettségű egészségügyi dolgozó
+4. egészségügyi szakdolgozó
+12. Érvényes biztosítás országa vagy a beteg állampolgársága
+Elsődlegesen, ha a beteg érvényes egészségbiztosítással rendelkezik, az egészségbiztosítási rendszert fenntartó állam kódját, egyébként a beteg állampolgárságának kódját kell megadni
+13. Személyazonosító jel
+Lásd a részletes kitöltési útmutatót
+14. Személyazonosító típusa
+0 = a személyazonosító jel nincs kitöltve
+1 = TAJ szám
+2 = 3 hónapnál fiatalabb gyermek képzett TAJ száma
+3 = útlevélszám
+5 = menedékes, kérelmező, befogadó igazolvány száma
+6 = ismeretlen TAJ számú elhunyt személy
+7 = ismeretlen beteg
+9 = személyazonosító a menekült, menedékes és oltalmazott státusz kérelmezését megelőzően nyújtott ellátás során
+15. A beteg neve
+(Elektronikusan nem továbbítandó)
+16. Születési dátuma
+A beteg születési dátuma évszázaddal együtt
+17. Anyja neve
+(Elektronikusan nem továbbítandó)
+A beteg anyjának a nevét kell megadni
+18. A beteg leánykori neve
+(Elektronikusan nem továbbítandó)
+A beteg leánykori nevét kell megadni
+19. Lakcím
+Az ellátott lakcíme (irányítószám, város/község, utca, házszám), amennyiben a dokumentált lakcímtől eltér a tartózkodási hely, akkor bemondás alapján az utóbbit kell figyelembe venni
+20. Kezelés ideje
+A kezelés dátuma. Az óra és perc mezők kitöltése csak sürgősségi ellátás során kötelező
+21. A beteg neme
+1 = férfi
+2 = nő
+Amennyiben nem állapítható meg, akkor a vizsgálatkori, vagy a nyilvántartott, vagy a születéskori neme adandó meg
+22. Az ellátás típusa
+1 = első szakellátás az adott betegséggel kapcsolatban
+2 = visszarendelés
+3 = szakorvosi konzílium
+4 = elsősegélynyújtás
+5 = tartósan gondozott beteg kontroll vizsgálata
+6 = szűrés
+7 = gondozásba vétel
+8 = gondozott beteg ellátása
+9 = nappali ellátás
+K = az Ebtv. 20. § (4) bekezdése szerinti keresőképtelenség miatti soron kívüli ellátás
+T = telemedicinális ellátás
+23. Továbbküldés
+0 = továbbküldés nem történt
+1 = más járóbeteg-szakrendelésre küldve
+2 = háziorvosi szolgálathoz irányítva
+3 = a beküldő háziorvoshoz irányítva
+4 = meghalt
+5 = saját szakorvosi rendelésre visszarendelve
+6 = a beküldő szakrendeléshez visszairányítva
+7 = fekvőbeteg-gyógyintézetbe utalva
+8 = házi szakápolásra utalva
+24. Baleset minősítése
+00 = nem baleset, nem foglalkozási betegség
+11 = munkahelyi baleset munkahely területén és/vagy munkavégzés közben
+16 = ellátást nyújtó egészségügyi intézményben történt baleset
+20 = foglalkozási megbetegedés miatti egészségügyi ellátás
+21 = közúti baleset KRESZ hatálya alá tartozó gépjárművel
+22 = közúti baleset tömegközlekedési eszközön
+31 = háztartási baleset
+32 = sportbaleset
+34 = állat okozta baleset
+40 = közterületen történt baleset
+41 = baleset feltételezhető, de a körülményei nem ismertek
+42 = idegenkezűség következtében létrejött baleset
+43 = fentiekbe be nem sorolható egyéb baleset
+25. E-adatlap kitöltés
+0 = nincs kitöltve
+1 = kitöltve (E térítési kategóriánál kitöltése kötelező)
+26. Diagnózisok
+Betegség kódolása BNO 10 szerint
+27. Beavatkozások
+Kód
+Beavatkozások kódolása OENO kód szerint
+Mennyiség (Me)
+A végzett beavatkozás mennyisége
+27/A. Beavatkozások jellege (J)
+A = akut beavatkozás
+V = választott időpontban végzett beavatkozás
+C = magyar biztosítással rendelkező beteg részére orvostudományi kutatás során, vagy a kutatás során fellépett szövődmény miatt szükséges akut beavatkozás
+D = magyar biztosítással rendelkező beteg részére orvostudományi kutatás során, vagy a kutatás során fellépett szövődmény miatt szükséges, választott időpontban végzett beavatkozás
+K = kúraszerű ellátás keretében végzett beavatkozás
+R = meddőségi komplex vizsgálati kód részét képező eljárás
+28. Laboratóriumi vizsgálat kérés
+(kitöltése kötelező)
+0 = nem történt laboratóriumi vizsgálat kérés
+1 = labor (haematológia vércsoport) és kémiai vizsgálatok
+2 = szerológia
+3 = labor (haematológia vércsoport) és kémiai vizsgálatok és szerológia együtt (1+2)
+4 = tenyésztéses mikrobiológiai vizsgálat
+5 = tenyésztés és rezisztencia vizsgálat
+6 = izotóp laborvizsgálat (in vitro)
+7 = izotóp laborvizsgálat (in vivo)
+8 = vizsgálat kérés vérellátótól
+9 = egyéb speciális laborvizsgálat
+29. Képalkotó vizsgálat kérés
+0 = nem történt vizsgálat
+1 = csak mellkas röntgen vizsgálat
+2 = egyéb natív röntgen vizsgálat
+3 = kontrasztanyagos röntgen vizsgálat (kivéve angiográfia)
+4 = angiográfia
+5 = többféle natív és/vagy kontrasztanyagos röntgen vizsgálat (kivéve angiográfia)
+6 = angiográfia és egyéb képalkotó vizsgálat együtt
+7 = ultrahang
+8 = izotóp
+9 = egyéb képalkotó vizsgálat
+30. CT-MRI-PET vizsgálat kérés
+0 = nem történt
+1 = CT vizsgálat kérés
+2 = MRI vizsgálat kérés
+3 = PET vizsgálat kérés
+4 = CT–MRI–PET vizsgálat kombinációja
+31. Fizioterápiás ellátásra utalás
+0 = nem történt
+1 = száraz egyéni terápia
+2 = száraz csoportos terápia
+3 = nedves egyéni terápia
+4 = nedves csoportos terápia
+5 = száraz és nedves együttes terápia
+6 = elektroterápia
+7 = nedves és elektromos terápia együtt
+8 = fény- és klímaterápia együtt
+32. Útiköltség térítési igény
+0 = útiköltség térítéssel kapcsolatos esemény nem történt
+1 = az útiköltség térítés indokoltságát a rendelés igazolta
+2 = szakorvosi rendelés útiköltség utalványt állított ki
+3 = betegszállítás rendelése
+33. Keresőképesség elbírálása
+0 = keresőképesség elbírálása nem történt
+1 = keresőképtelenség megállapítása korábban keresőképes személynél
+2 = keresőképtelen személy kontrollja és további keresőképtelenség megállapítása
+3 = keresőképtelen személy kontrollja és újbóli keresőképesség megállapítása
+4 = keresőképtelenség lezárása halál miatt
+5 = keresőképtelenség lezárása egyéb ok miatt
+34. Felírt gyógyászati segédeszköz vények száma
+(kitöltése kötelező)
+A felírt gyógyászati segédeszköz vények számát kell megadni
+35. Felírt vények száma
+(kitöltése kötelező)
+A felírt vények darabszámát kell megadni a gyógyászati segédeszköz és gyógyászati ellátás (gyógyfürdő) felírás kivételével
+36. Felírt gyógyászati ellátás (gyógyfürdő) vények száma
+(kitöltése kötelező)
+A felírt gyógyászati ellátás vények számát kell megadni
+40. Intézményi várólista esetazonosító
+(kitöltése kötelező várólista regisztrációs kötelezettség esetén)
+Az Országos Várólista Nyilvántartási Rendszerben regisztrált várólista eset egyedi publikus esetazonosítóját kell megadni
+

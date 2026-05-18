@@ -1,0 +1,1132 @@
+[
+  {
+    "transcript": "A páciens egy 54 éves nő, aki jobb alsó kvadráns fájdalommal jelentkezett. Az anamnézisében szerepel, hogy 2020-ban epehólyagműtéten esett át, és korábban diverticulitist is diagnosztizáltak nála. Fizikális vizsgálat során a jobb alsó kvadráns nyomásérzékeny, de a beteg bal alsó kvadránsról is panaszkodik. Diagnózis: felmerüló appendicitis. Kezelési terv: Augmentint írnék fel, de visszaemlékezik, hogy a beteg penicillin allergiás, így inkább doxiciklint választok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Augmentint írnék fel",
+          "contradicted_by": "a beteg penicillin allergiás, így inkább doxiciklint választok",
+          "medical_assessment": "A végső döntés helyes, mivel a penicillin allergia miatt az Augmentin felírása kockázatos lenne."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap_2023",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "A",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "K35",
+          "text_label": "Appendicitis",
+          "evidence": "Diagnózis: felmerülő appendicitis.",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Kezelési terv: Augmentint írnék fel, de inkább doxiciklint választok.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 68 éves férfi beteg érkezett, panasza generalizált gyengeség és szédülés. Anamnézise: kardiovaszkuláris betegségek, hipertónia, 2019-ben szívinfarktus. Fizikális vizsgálat: vérnyomás 150/95 Hgmm, pulzus 45/min. Érdekes módon, a fentiek ellenére tachycardiát említenék, de ez hibás. Gyógyszeresen először előírnék egy béta-blokkolót, de megfordul a fejemben, hogy ez ronthatja az állapotát, így inkább diuretikumot javaslok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "tachycardiát említenék",
+          "contradicted_by": "pulzus 45/min",
+          "medical_assessment": "A pulzus 45/min bradycardiára utal, nem tachycardiára. Az orvos helyesen korrigálta az állítást."
+        },
+        {
+          "statement": "előírnék egy béta-blokkolót",
+          "contradicted_by": "inkább diuretikumot javaslok",
+          "medical_assessment": "A béta-blokkoló ronthatja a bradycardiát, így a diuretikum javaslata helyes döntés."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "I10",
+          "text_label": "Hipertónia",
+          "evidence": "Anamnézise: kardiovaszkuláris betegségek, hipertónia",
+          "confidence": 0.9
+        },
+        {
+          "bno10": "I21",
+          "text_label": "Szívinfarktus",
+          "evidence": "2019-ben szívinfarktus",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "inkább diuretikumot javaslok",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "36 éves férfi jelentkezett akut bal térd fájdalommal. Anamnézis: korábban sportbaleset miatt fizikoterápián vett részt. Fizikális vizsgálat: a bal térd duzzadt és meleg tapintású. Diagnózis: bal oldali prepatelláris bursitis. Azonban, a kezelési terveknél jobb térdre fókuszálok, NSAID-t írok fel, majd rádöbbenek, és a bal térdre vonatkozó kezelést módosítok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "NSAID-t írok fel, majd rádöbbenek, és a bal térdre vonatkozó kezelést módosítok.",
+          "contradicted_by": "a bal térdre vonatkozó kezelést módosítok.",
+          "medical_assessment": "A végső döntés helyes, mivel a bal térd volt a problémás terület, így a kezelés módosítása indokolt."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "32",
+        "beavatkozas_jellege": "A",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "M70.42",
+          "text_label": "bal oldali prepatelláris bursitis",
+          "evidence": "Diagnózis: bal oldali prepatelláris bursitis.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "NSAID-t írok fel, majd rádöbbenek, és a bal térdre vonatkozó kezelést módosítok.",
+          "confidence": 0.85
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A beteg egy 45 éves nő, aki krónikus köhögés miatt keresett fel. Az anamnézisében asztma és allergiás rhinitis szerepel. Fizikális vizsgálat során a tüdők felett bronchiális légzés hallható. Kezdetben felírnék egy long-acting béta agonistát, de ezt azonnal ellenejavallom asztma miatt, majd inhalált kortikoszteroidra váltok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Felírnék egy long-acting béta agonistát.",
+          "contradicted_by": "Ezt azonnal ellenejavallom asztma miatt, majd inhalált kortikoszteroidra váltok.",
+          "medical_assessment": "A végső döntés helyes, mivel a long-acting béta agonisták önmagukban nem ajánlottak asztmás betegek számára. Az inhalált kortikoszteroid megfelelőbb választás."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "J45",
+          "text_label": "Asztma",
+          "evidence": "Az anamnézisében asztma szerepel.",
+          "confidence": 0.95
+        },
+        {
+          "bno10": "J30.1",
+          "text_label": "Allergiás rhinitis",
+          "evidence": "Az anamnézisében allergiás rhinitis szerepel.",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Inhalált kortikoszteroidra váltok.",
+          "confidence": 0.85
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A páciens egy 72 éves nő, aki heveny jobb oldali mellkasi fájdalommal érkezett. Anamnézise tartalmazza, hogy két évvel ezelőtt tüdőembólia alakult ki nála. A fizikális vizsgálat során a jobb alsó kvadráns érzékeny nyomásra. Diagnózis: valószínűsíthető pleuritisz, azonban a kezelési tervnél a bal oldalra koncentrálnék. Az első kezelés heparin, de áttérek egy új orális antikoagulánsra.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Diagnózis: valószínűsíthető pleuritisz, azonban a kezelési tervnél a bal oldalra koncentrálnék.",
+          "contradicted_by": "A páciens egy 72 éves nő, aki heveny jobb oldali mellkasi fájdalommal érkezett.",
+          "medical_assessment": "A diagnózis és a kezelési terv ellentmondásos, mivel a fájdalom jobb oldali, de a kezelés bal oldalra koncentrál. Ez potenciális orvosi hibát rejt."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "A",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "J90",
+          "text_label": "Pleuritisz",
+          "evidence": "Diagnózis: valószínűsíthető pleuritisz.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Heparin kezelés",
+          "quantity_me": 1,
+          "evidence": "Az első kezelés heparin.",
+          "confidence": 0.9
+        },
+        {
+          "oeno": null,
+          "text_label": "Orális antikoaguláns kezelés",
+          "quantity_me": 1,
+          "evidence": "De áttérek egy új orális antikoagulánsra.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 60 éves férfi érkezett rekedtséggel és fáradékonysággal. Anamnézisében pajzsmirigy alulműködés szerepel. Fizikális vizsgálat: pajzsmirigy enyhén megnagyobbodott, pulzus 55/min. Először levothyroxint javaslok, de a pulzus miatt visszaveszem a dózist. Majd visszatérek a standard kezeléshez.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Először levothyroxint javaslok, de a pulzus miatt visszaveszem a dózist.",
+          "contradicted_by": "Majd visszatérek a standard kezeléshez.",
+          "medical_assessment": "A végső döntés a standard kezeléshez való visszatérés, ami helyes lehet, de a pulzus figyelembevétele fontos."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "E03.9",
+          "text_label": "Pajzsmirigy alulműködés",
+          "evidence": "Anamnézisében pajzsmirigy alulműködés szerepel.",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Először levothyroxint javaslok, de a pulzus miatt visszaveszem a dózist.",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A beteg 30 éves nő, aki hasmenés és láz miatt keresett fel. Anamnézisben Crohn-betegség. Vizsgálatok: hasi ultrahang, amely enyhe ileális megvastagodást mutat. Fizikális vizsgálat: has szórtan nyomásérzékeny. Amikor az antibiotikum-terápia kerül szóra, először ciprofloxacint említeném, de gyorsan áttérek az azitromicinra.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Antibiotikum-terápia: ciprofloxacin",
+          "contradicted_by": "Antibiotikum-terápia: azitromicin",
+          "medical_assessment": "Az azitromicin választása helyes lehet, ha a beteg allergiás a ciprofloxacinra vagy más okból nem javasolt."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "7",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "K50.9",
+          "text_label": "Crohn-betegség, k.m.n.",
+          "evidence": "Anamnézisben Crohn-betegség.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Hasi ultrahang",
+          "quantity_me": 1,
+          "evidence": "Vizsgálatok: hasi ultrahang, amely enyhe ileális megvastagodást mutat.",
+          "confidence": 0.9
+        }
+      ],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Antibiotikum-terápia: azitromicin",
+          "confidence": 0.85
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 65 éves nő érkezett anginás panaszokkal. Anamnézise: cukorbetegség, magas vérnyomás. Fizikális vizsgálat: holoszisztolés zörej hallható az apikális területen. Első ajánlás nitroglicerin spray, de eszembe jut, hogy a beteg glaukómás, így módosítom isosorbid dinitrátra.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Első ajánlás nitroglicerin spray",
+          "contradicted_by": "módosítom isosorbid dinitrátra",
+          "medical_assessment": "A nitroglicerin spray alkalmazása glaukómás betegnél ellenjavallt lehet, így az isosorbid dinitrát helyesebb választás."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "A",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "I20.9",
+          "text_label": "Angina pectoris",
+          "evidence": "Egy 65 éves nő érkezett anginás panaszokkal.",
+          "confidence": 0.9
+        },
+        {
+          "bno10": "E11.9",
+          "text_label": "Cukorbetegség",
+          "evidence": "Anamnézise: cukorbetegség, magas vérnyomás.",
+          "confidence": 0.9
+        },
+        {
+          "bno10": "I10",
+          "text_label": "Magas vérnyomás",
+          "evidence": "Anamnézise: cukorbetegség, magas vérnyomás.",
+          "confidence": 0.9
+        },
+        {
+          "bno10": "H40.9",
+          "text_label": "Glaukóma",
+          "evidence": "a beteg glaukómás",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "módosítom isosorbid dinitrátra",
+          "confidence": 0.8
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "57 éves férfi panaszkodik általános gyengeségre és étvágytalanságra. Az anamnézis hipertóniát tartalmaz, de a beteg jelenleg visszatartott diuretikumot szed. Fizikális vizsgálat: vesepalpáció során érzékenység. A kezdeti diuretikus kezelést kalciumcsatorna-blokkolóra váltanám, de a beteg ellenáll, így visszatérek az eredeti kezeléshez.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "A kezdeti diuretikus kezelést kalciumcsatorna-blokkolóra váltanám.",
+          "contradicted_by": "a beteg ellenáll, így visszatérek az eredeti kezeléshez.",
+          "medical_assessment": "A végső döntés helyes, mivel a beteg beleegyezése szükséges a kezelés módosításához."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "Általános gyengeség és étvágytalanság",
+          "evidence": "57 éves férfi panaszkodik általános gyengeségre és étvágytalanságra.",
+          "confidence": 0.8
+        },
+        {
+          "bno10": "I10",
+          "text_label": "Hipertónia",
+          "evidence": "Az anamnézis hipertóniát tartalmaz.",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 42 éves férfi vállízületi fájdalommal jelentkezett, és a kórtörténet szerint rheumatoid arthritisben szenved. Fizikális vizsgálat: jobboldali vállízületi merevség és duzzanat. Először a bal vállra írtam volna fel NSAID-ot, de rádöbbenek a hibára, és javítom.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Először a bal vállra írtam volna fel NSAID-ot",
+          "contradicted_by": "javítom",
+          "medical_assessment": "A javítás helyes, mivel a jobboldali vállízület érintett, nem a bal."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "M05.9",
+          "text_label": "Rheumatoid arthritis, k.m.n.",
+          "evidence": "A kórtörténet szerint rheumatoid arthritisben szenved.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Először a bal vállra írtam volna fel NSAID-ot, de rádöbbenek a hibára, és javítom.",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A páciens egy 28 éves nő, aki bal oldali hasfájdalommal és émelygéssel érkezett. Anamnézis: korábbi ciszta a bal petefészeknél. Fizikális vizsgálat: bal oldali alsó kvadráns nyomásérzékeny. A diagnózis follicularis ciszta gyanú. Az elején visszatérő algopyrint ajánlanék fájdalomcsillapításra, de rájövök, hogy allergiás rá, így ibuprofent írok fel.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Algopyrint ajánlanék fájdalomcsillapításra.",
+          "contradicted_by": "Allergiás rá, így ibuprofent írok fel.",
+          "medical_assessment": "Az ibuprofen felírása helyes döntés, mivel a páciens allergiás az algopyrinre."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "A",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "N83.0",
+          "text_label": "Follicularis ciszta gyanú",
+          "evidence": "A diagnózis follicularis ciszta gyanú.",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Ibuprofent írok fel.",
+          "confidence": 0.95
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "70 éves férfi jött, aki eszméletvesztésről számol be. Az anamnézisben Parkinson-kór és alacsony vérnyomás szerepel. Fizikális vizsgálat: vérnyomás 90/60 Hgmm, pulzus 60/min. Kezdetben adrenerg stimulánst javasolnék, de az állapot miatt inkább óvatos folyadékbevitelt ajánlok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Kezdetben adrenerg stimulánst javasolnék",
+          "contradicted_by": "de az állapot miatt inkább óvatos folyadékbevitelt ajánlok",
+          "medical_assessment": "A végső döntés helyes, mivel az alacsony vérnyomás és a Parkinson-kór miatt a stimulánsok alkalmazása kockázatos lehet."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap_2023",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "G20",
+          "text_label": "Parkinson-kór",
+          "evidence": "Az anamnézisben Parkinson-kór szerepel.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A beteg 55 éves nő, szívpanaszokkal és légszomjjal jelentkezett. Anamnézis: aorta sztenózis. Fizikális vizsgálat: szívzörej, pulzus 65/min. Először ACE-gátlót javasolnék, de a zörej figyelembevételével módosítok diuretikus kezelésre.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Először ACE-gátlót javasolnék",
+          "contradicted_by": "de a zörej figyelembevételével módosítok diuretikus kezelésre",
+          "medical_assessment": "A végső döntés helyes, mivel a szívzörej jelenléte indokolhatja a diuretikus kezelés előnyben részesítését az ACE-gátlóval szemben."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "I35.0",
+          "text_label": "Aorta sztenózis",
+          "evidence": "Anamnézis: aorta sztenózis.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "módosítok diuretikus kezelésre",
+          "confidence": 0.9
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 62 éves nő érkezik ájulás miatt. Anamnézisében hosszú QT szindróma szerepel. Fizikális vizsgálat: rendszeres sinus ritmus. Kezdetben antiarrhythmiás kezelést írnék elő, de a diagnózis felülvizsgálata után inkább elektrofiziológiai vizsgálatra küldöm.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Kezdetben antiarrhythmiás kezelést írnék elő",
+          "contradicted_by": "de a diagnózis felülvizsgálata után inkább elektrofiziológiai vizsgálatra küldöm",
+          "medical_assessment": "A végső döntés helyes, mivel az elektrofiziológiai vizsgálat pontosabb diagnózist biztosíthat a hosszú QT szindróma kezeléséhez."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap_2023",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "I45.9",
+          "text_label": "Hosszú QT szindróma",
+          "evidence": "Anamnézisében hosszú QT szindróma szerepel.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Elektrofiziológiai vizsgálat",
+          "quantity_me": 1,
+          "evidence": "inkább elektrofiziológiai vizsgálatra küldöm",
+          "confidence": 0.9
+        }
+      ],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A páciens 40 éves férfi, aki jobb fülzúgásra és halláscsökkenésre panaszkodik. Anamnézis: nemrégiben felső légúti fertőzés. Fizikális vizsgálat: jobb oldali dobhártya hyperemiás. Először a bal oldali fülre fókuszálnék, de javítom. Kezelés: kezdve orális antibiotikus terápiával, de végül helyi kezelésre váltok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Először a bal oldali fülre fókuszálnék",
+          "contradicted_by": "de javítom",
+          "medical_assessment": "Az orvos korrigálta a fókuszt a jobb fülre, ami helyes, mivel a panaszok a jobb fülre vonatkoznak."
+        },
+        {
+          "statement": "Kezdve orális antibiotikus terápiával",
+          "contradicted_by": "de végül helyi kezelésre váltok",
+          "medical_assessment": "A helyi kezelésre váltás helyes döntés lehet, mivel a dobhártya hyperemiás, és a helyi kezelés célzottabb lehet."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": null,
+          "text_label": "jobb fülzúgás és halláscsökkenés",
+          "evidence": "A páciens 40 éves férfi, aki jobb fülzúgásra és halláscsökkenésre panaszkodik.",
+          "confidence": 0.9
+        },
+        {
+          "bno10": null,
+          "text_label": "felső légúti fertőzés anamnézis",
+          "evidence": "Anamnézis: nemrégiben felső légúti fertőzés.",
+          "confidence": 0.8
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "helyi kezelés",
+          "quantity_me": 1,
+          "evidence": "Kezelés: kezdve orális antibiotikus terápiával, de végül helyi kezelésre váltok.",
+          "confidence": 0.85
+        }
+      ],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 50 éves férfi panaszkodik nem specifikus hasi érzékenységre és dysuriára. Kórtörténet: gyakori húgyúti fertőzések. Fizikális vizsgálat: alhas nyomásérzékeny. Kezelési terv: kezdetben ampicillint írok fel, majd módosítom trimetoprim-szulfametoxazolra, figyelembe véve a korábbi allergiát.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "kezdetben ampicillint írok fel",
+          "contradicted_by": "majd módosítom trimetoprim-szulfametoxazolra, figyelembe véve a korábbi allergiát",
+          "medical_assessment": "Az ampicillin felírása helytelen lehet, ha a beteg allergiás rá. A trimetoprim-szulfametoxazol választása helyesebb lehet."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap_2023",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "R10.4",
+          "text_label": "Hasi érzékenység",
+          "evidence": "Egy 50 éves férfi panaszkodik nem specifikus hasi érzékenységre.",
+          "confidence": 0.9
+        },
+        {
+          "bno10": "N39.0",
+          "text_label": "Húgyúti fertőzés",
+          "evidence": "Kórtörténet: gyakori húgyúti fertőzések.",
+          "confidence": 0.85
+        }
+      ],
+      "procedures": [],
+      "found": [
+        {
+          "field": "veny_gyogyszer",
+          "value": "1",
+          "evidence": "Kezelési terv: kezdetben ampicillint írok fel, majd módosítom trimetoprim-szulfametoxazolra.",
+          "confidence": 0.95
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A beteg 30 éves nő, aki gyengeség és fáradtság miatt keresett fel. Anamnézis: vashiányos anémia. Fizikális vizsgálat: sápadt bőr, pulzus 80/min. Először orális vaspótlást javasolok, de az emésztőrendszeri tünetek miatt vissza is vonom. Végül parenterális vasat javaslok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Orális vaspótlást javasolok.",
+          "contradicted_by": "Az emésztőrendszeri tünetek miatt visszavonom.",
+          "medical_assessment": "A végső döntés helyes, mivel a parenterális vas elkerüli az emésztőrendszeri mellékhatásokat."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "D50.9",
+          "text_label": "Vashiányos anémia",
+          "evidence": "Anamnézis: vashiányos anémia.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "A páciens egy 38 éves férfi, aki mellkasi fájdalmat és köhögést tapasztalt. Anamnézis: korábbi asztmás rohamok. Fizikális vizsgálat: szaturáció 98%, légzőszervi vizsgálat során crepitáció hallható. Első vonalbeli kezelés az inhalált béta-agonisták, de figyelembe veszem az asztmát, és kortikoszteroidot ajánlok.",
+    "extracted": {
+      "contradictions": [],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "A",
+        "labor_keres": "0",
+        "kepalkoto_keres": "1",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "1",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "J45",
+          "text_label": "Asztma",
+          "evidence": "Anamnézis: korábbi asztmás rohamok.",
+          "confidence": 0.9
+        }
+      ],
+      "procedures": [
+        {
+          "oeno": null,
+          "text_label": "Inhalált béta-agonisták",
+          "quantity_me": 1,
+          "evidence": "Első vonalbeli kezelés az inhalált béta-agonisták.",
+          "confidence": 0.8
+        },
+        {
+          "oeno": null,
+          "text_label": "Kortikoszteroid ajánlás",
+          "quantity_me": 1,
+          "evidence": "Kortikoszteroidot ajánlok.",
+          "confidence": 0.8
+        }
+      ],
+      "found": [
+        {
+          "field": "kepalkoto_keres",
+          "value": "1",
+          "evidence": "Mellkasi fájdalom és köhögés miatt mellkas rtg indokolt lehet.",
+          "confidence": 0.7
+        }
+      ],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "58 éves férfi, aki általános fáradtsággal és kimerültséggel érkezik. Az anamnézisében hypothyreosis. Fizikális vizsgálat: pulzus 70/min, megnagyobbodott pajzsmirigy. Először levothyroxint javaslok, de a pajzsmirigy állapota miatt konzervatív megközelítést ajánlok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "Először levothyroxint javaslok",
+          "contradicted_by": "a pajzsmirigy állapota miatt konzervatív megközelítést ajánlok",
+          "medical_assessment": "A végső döntés a konzervatív megközelítés, ami helyes lehet a pajzsmirigy állapota miatt, de a levothyroxin elhagyása potenciális kockázatot jelenthet a hypothyreosis kezelésében."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap_2023",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "E03.9",
+          "text_label": "Hypothyreosis, k.m.n.",
+          "evidence": "Az anamnézisében hypothyreosis.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  {
+    "transcript": "Egy 29 éves nő jelentkezett, aki alhasi fájdalmat és bélműködési zavarokat tapasztalt. Anamnézis: irritábilis bél szindróma. Fizikális vizsgálat: alhasi nyomásérzékenység. Elsőként IBS-specifikus diétát és spazmolitikumot javasolnék, de az étrendi korlátozások miatt visszavontam, majd probiotikus kezelést ajánlok.",
+    "extracted": {
+      "contradictions": [
+        {
+          "statement": "IBS-specifikus diétát és spazmolitikumot javasolnék",
+          "contradicted_by": "az étrendi korlátozások miatt visszavontam, majd probiotikus kezelést ajánlok",
+          "medical_assessment": "A végső döntés helyes, mivel a probiotikus kezelés kevésbé kockázatos az étrendi korlátozások miatt."
+        }
+      ],
+      "document": {
+        "template_id": "ambulans_adatlap",
+        "language": "hu",
+        "source_type": "transcript"
+      },
+      "fields": {
+        "ellatas_tipusa": "1",
+        "tovabbkuldes": "0",
+        "baleset_minositese": "00",
+        "beavatkozas_jellege": "V",
+        "labor_keres": "0",
+        "kepalkoto_keres": "0",
+        "ct_mri_pet": "0",
+        "keresokepesseg": "0",
+        "utikoltseg": "0",
+        "teritesi_kategoria": "01",
+        "fizioterapia": "0",
+        "veny_segedeszkoz": "0",
+        "veny_gyogyszer": "0",
+        "veny_gyogyfurdo": "0"
+      },
+      "diagnoses": [
+        {
+          "bno10": "K58.0",
+          "text_label": "Irritábilis bél szindróma",
+          "evidence": "Anamnézis: irritábilis bél szindróma.",
+          "confidence": 0.95
+        }
+      ],
+      "procedures": [],
+      "found": [],
+      "validation": {
+        "errors": [],
+        "warnings": []
+      }
+    }
+  }
+]
